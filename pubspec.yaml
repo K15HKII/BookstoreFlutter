@@ -61,6 +61,8 @@ flutter:
 
   assets:
     - assest/background_image.png
+    - assest/fbicon.png
+    - assest/ggicon.png
 
 
   fonts:
