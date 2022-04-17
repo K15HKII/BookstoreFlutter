@@ -307,7 +307,14 @@ SizedBox(height: 20,),
                 margin: EdgeInsets.symmetric(horizontal: 100),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50),
-                    color:  Color(0xff0C5776)
+                    color:  Color(0xff0C5776),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      blurRadius: 8,
+                      offset: Offset(0, 4), // Shadow position
+                    ),
+                  ],
                 ),
                 child: Center(
                   child: TextButton(

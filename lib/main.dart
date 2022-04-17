@@ -3,7 +3,9 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/painting/decoration_image.dart';
 import 'package:flutter/src/material/text_field.dart';
+import 'package:huy12345/forgotpass.dart';
 import 'registeredpage2.dart';
+import 'forgotpass.dart';
 void main() => runApp(
   MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -148,20 +150,32 @@ suffixIcon: IconButton(
                   Container(
                       padding: EdgeInsets.only(left:250, top: 20),
                       child: SizedBox(
-                        child:Text(
-                          "Quên mật khẩu?",
-                          style: TextStyle(color: Colors.blue),
-                        ) ,
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgotPass()));
+                          },
+                          child: Text('Quên mật khẩu', style: TextStyle(color: Colors.blue),
+
+
+                        ),
                       )
                   ),
-
+                  ),
                 SizedBox(height: 20,),
                   Container(
                     height: 55,
                     margin: EdgeInsets.symmetric(horizontal: 90),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
-                      color:  Color(0xff001C44)
+                      color:  Color(0xff001C44),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 8,
+                          offset: Offset(0, 4), // Shadow position
+                        ),
+                      ],
+
                     ),
                     child: Center(
                       child: TextButton(
