@@ -3,9 +3,9 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/painting/decoration_image.dart';
 import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/forgotpass.dart';
-import 'registeredpage2.dart';
-import 'forgotpass.dart';
+import 'package:huy12345/ForgotPassPage.dart';
+import 'RegisterPage.dart';
+import 'ForgotPassPage.dart';
 import 'designunchangedcard.dart';
 import 'navigate.dart';
 
@@ -113,13 +113,13 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
                       child: TextButton(
                           child: Text(""),
                           onPressed: () {
-                            PriceCardWithStar_HearInt += 1;
-                            if (PriceCardWithStar_HearInt % 2 == 1) {
+                            PriceCardWithStar_HeartInt += 1;
+                            if (PriceCardWithStar_HeartInt % 2 == 1) {
                               setState(() {
                                 heartuncheck = "assest/heartcheck.png";
                               });
                             }
-                            if (PriceCardWithStar_HearInt % 2 == 0) {
+                            if (PriceCardWithStar_HeartInt % 2 == 0) {
                               setState(() {
                                 heartuncheck = "assest/heartuncheck.png";
                               });

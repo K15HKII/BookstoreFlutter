@@ -3,9 +3,9 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/painting/decoration_image.dart';
 import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/forgotpass.dart';
-import 'registeredpage2.dart';
-import 'forgotpass.dart';
+import 'package:huy12345/ForgotPassPage.dart';
+import 'RegisterPage.dart';
+import 'ForgotPassPage.dart';
 import 'designunchangedcard.dart';
 import 'navigate.dart';
 
@@ -20,7 +20,6 @@ class _PriceCardState extends State<PriceCard> {
   @override
   Widget build(BuildContext context) {
     //-----------------------------------------------------------------
-
     String PriceCard_Image = "assest/testbg.jpg";
     int PriceCard_PriceInt = 696969;
     String PriceCard_Price = PriceCard_PriceInt.toString();

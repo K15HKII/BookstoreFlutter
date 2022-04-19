@@ -3,7 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/painting/decoration_image.dart';
 import 'package:flutter/src/material/text_field.dart';
-import 'registeredpage2.dart';
+import 'RegisterPage.dart';
 
 
 class ForgotPass extends StatefulWidget {

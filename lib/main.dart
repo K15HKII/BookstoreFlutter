@@ -3,9 +3,9 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/painting/decoration_image.dart';
 import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/forgotpass.dart';
-import 'registeredpage2.dart';
-import 'forgotpass.dart';
+import 'package:huy12345/ForgotPassPage.dart';
+import 'RegisterPage.dart';
+import 'ForgotPassPage.dart';
 import 'designunchangedcard.dart';
 import 'navigate.dart';
 
