@@ -7,7 +7,7 @@ import 'package:huy12345/ForgotPassPage.dart';
 import 'package:huy12345/main.dart';
 import 'RegisterPage.dart';
 import 'ForgotPassPage.dart';
-import 'designunchangedcard.dart';
+import 'DesignCardView.dart';
 import 'PriceCardWithStar.dart';
 
 class NavigatePage extends StatefulWidget {

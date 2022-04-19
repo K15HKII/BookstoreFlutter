@@ -6,7 +6,7 @@ import 'package:flutter/src/material/text_field.dart';
 import 'package:huy12345/ForgotPassPage.dart';
 import 'RegisterPage.dart';
 import 'ForgotPassPage.dart';
-import 'designunchangedcard.dart';
+import 'DesignCardView.dart';
 import 'navigate.dart';
 
 class TopicCard extends StatefulWidget {

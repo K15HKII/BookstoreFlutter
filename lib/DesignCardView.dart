@@ -7,6 +7,7 @@ import 'PriceCardWithStar.dart';
 import 'PriceCard.dart';
 import 'TopicCard.dart';
 import 'BigCardInfo.dart';
+import 'BookCard.dart';
 
 class DesignCard extends StatefulWidget {
   const DesignCard({Key? key}) : super(key: key);
@@ -28,7 +29,7 @@ class _DesignCardState extends State<DesignCard> {
     return Scaffold(
         backgroundColor: Colors.black,
         body: Column(
-          children: <Widget>[BigCardInfo()],
+          children: <Widget>[BookCard()],
         ));
   }
 }
@@ -188,103 +189,7 @@ Widget Card1WithToTalPrize() {
   );
 }
 
-Widget Card1() {
-  return new Container(
-    height: 100,
-    width: 327,
-    color: Colors.white,
-    child: Row(
-      children: <Widget>[
-        Container(
-            height: 68,
-            width: 70,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assest/testbg.jpg'),
-                fit: BoxFit.fitHeight,
-              ),
-            )),
-        SizedBox(
-          width: 10,
-        ),
-        Container(
-          height: 68,
-          width: 150,
-          child: Column(
-            children: <Widget>[
-              SizedBox(
-                height: 6,
-              ),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Container(
-                  child: Text(
-                    "Hồ đắc nhân tâm",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontFamily: "Lato",
-                      color: Colors.black,
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 4,
-              ),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Container(
-                  child: Text(
-                    "Bìa cứng",
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontFamily: "Lato",
-                      color: Color(0xff636363),
-                    ),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-        SizedBox(
-          width: 35,
-        ),
-        new Container(
-          width: 9,
-          height: 19,
-          child: Text(
-            "x",
-            style: TextStyle(
-              fontSize: 18,
-              fontFamily: "Lato",
-              color: Colors.black,
-            ),
-            textAlign: TextAlign.left,
-          ),
-        ),
-        SizedBox(
-          width: 5,
-        ),
-        new Container(
-          width: 48,
-          height: 19,
-          child: Text(
-            "69",
-            style: TextStyle(
-              fontSize: 18,
-              fontFamily: "Lato",
-              color: Colors.black,
-            ),
-            textAlign: TextAlign.left,
-          ),
-        )
-      ],
-    ),
-  );
-}
+
 
 Widget Card1WithPrize() {
   return new Container(
