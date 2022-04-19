@@ -63,6 +63,11 @@ flutter:
     - assest/background_image.png
     - assest/fbicon.png
     - assest/ggicon.png
+    - assest/testbg.jpg
+    - assest/heartuncheck.png
+    - assest/heartcheck.png
+    - assest/starfull.png
+    - assest/starhalf.png
 
 
   fonts:

@@ -55,12 +55,10 @@ class _ForgotPassState extends State<ForgotPass> {
               height: 330,
 
               child: DecoratedBox(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Color(0xff98BDC7)
-                ),
-
-                child: Column(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color(0xff98BDC7)),
+                    child: Column(
                   children: <Widget>[
                     SizedBox(height: 38,),
                     Text("Nhập số điện thoại hoặc email để nhận mã xác thực",style: TextStyle(color: Colors.white, fontFamily: "Lato", fontSize: 18),textAlign: TextAlign.center,),
