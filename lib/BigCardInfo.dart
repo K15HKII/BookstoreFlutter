@@ -10,7 +10,17 @@ import 'DesignCardView.dart';
 import 'navigate.dart';
 
 class BigCardInfo extends StatefulWidget {
-  const BigCardInfo({Key? key}) : super(key: key);
+  BigCardInfo(String Title, String Image, int Price, int Amount, double Rate,
+      String Desc,
+      {Key? key})
+      : super(key: key) {
+    BigCardInfo_Title = Title;
+    BigCardInfo_Image = Image;
+    BigCardInfo_PriceInt = Price;
+    BigCardInfo_AmountInt = Amount;
+    BigCardInfo_StarInt = Rate;
+    BigCardInfo_Description = Desc;
+  }
 
   @override
   State<BigCardInfo> createState() => _BigCardInfoState();
@@ -20,14 +30,9 @@ class _BigCardInfoState extends State<BigCardInfo> {
   @override
   Widget build(BuildContext context) {
     //----------------------------------------------------------------
-    String BigCardInfo_Image = "assest/testbg.jpg";
-    String BigCardInfo_Title = "Sách đắc nhân tâm";
-    int BigCardInfo_PriceInt = 696969;
+
     String BigCardInfo_Price = BigCardInfo_PriceInt.toString();
-    double BigCardInfo_StarInt = 4.5;
-    int BigCardInfo_AmountInt = 2;
     String BigCardInfo_Amount = BigCardInfo_AmountInt.toString();
-    String BigCardInfo_Description = "huycutecutecutecutecutecute";
     //----------------------------------------------------------------
     return new SizedBox(
       height: 525,
@@ -65,16 +70,19 @@ class _BigCardInfoState extends State<BigCardInfo> {
                     children: <Widget>[
                       new Row(
                         children: <Widget>[
-                          Text(
-                            BigCardInfo_Title,
-                            style: TextStyle(
-                                fontSize: 20,
-                                color: Colors.black,
-                                fontFamily: "Lato"),
-                            textAlign: TextAlign.left,
+                          new Container(
+                            width: 250,
+                            child: Text(
+                              BigCardInfo_Title,
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  color: Colors.black,
+                                  fontFamily: "Lato"),
+                              textAlign: TextAlign.left,
+                            ),
                           ),
                           SizedBox(
-                            width: 120,
+                            width: 50,
                           ),
                           new Container(
                             height: 21,

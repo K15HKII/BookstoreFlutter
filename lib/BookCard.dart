@@ -10,7 +10,13 @@ import 'DesignCardView.dart';
 import 'navigate.dart';
 
 class BookCard extends StatefulWidget {
-  const BookCard({Key? key}) : super(key: key);
+  BookCard(String Title, String Image, int Amount, String Type, {Key? key})
+      : super(key: key) {
+    BookCard_Title = Title;
+    BookCard_Image = Image;
+    BookCard_AmountInt = Amount;
+    BookCard_Type = Type;
+  }
 
   @override
   State<BookCard> createState() => _BookCardState();
@@ -20,10 +26,6 @@ class _BookCardState extends State<BookCard> {
   @override
   Widget build(BuildContext context) {
     //--------------------------------------------------------
-    String BookCard_Image = "assest/testbg.jpg";
-    String BookCard_Title = "Hồ đắc nhân tâm";
-    String BookCard_Type = "Bìa cứng";
-    int BookCard_AmountInt = 69;
     String BookCard_Amount = BookCard_AmountInt.toString();
     //--------------------------------------------------------
     return new Container(

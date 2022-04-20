@@ -23,7 +23,53 @@ int heartcheck = 0;
 String heartuncheck = "assest/heartuncheck.png";
 int PriceCard_HeartInt = 0;
 int PriceCardWithStar_HeartInt = 0;
-int BigCardInfo_HeartInt=0;
+int BigCardInfo_HeartInt = 0;
+
+// variable global--------------------------------------------------------------
+String PriceCard_Title = "Hồ đắc nhân tâm";
+String PriceCard_Image = "assest/testbg.jpg";
+int PriceCard_PriceInt = 0;
+//title-image-price
+//PriceCard("Con chó biết bay", "assest/testbg.jpg", 34892)
+String PriceCardWithStar_Image = "assest/testbg.jpg";
+int PriceCardWithStar_PriceInt = 696969;
+String PriceCardWithStar_Title = "Sách đắc nhân tâm";
+double PriceCardWithStar_StarInt = 4.9;
+//title-image-price-rate
+//DesignCardWithStar("Con mèo đi hia", "assest/testbg.jpg",696969,4.9)
+String TopicCard_Topic = "Huycute";
+String TopicCard_Image = "assest/testbg.jpg";
+//topic-image
+//TopicCard("cute", "assest/testbg.jpg")
+String BookCard_Title = "Con chó biết bay";
+String BookCard_Type = "Bìa cứng";
+String BookCard_Image = "assest/testbg.jpg";
+int BookCard_AmountInt = 69;
+//title-image-amount-type
+//BookCard("zigzag","assest/testbg.jpg", 24,"Bìa mềm")
+String BookCardWithPrize_Image = "assest/testbg.jpg";
+String BookCardWithPrize_Title = "Hồ đắc nhân tâm";
+String BookCardWithPrize_Type = "Bìa cứng";
+int BookCardWithPrize_AmountInt = 69;
+int BookCardWithPrize_PriceInt = 696969;
+//title-image-price-amount-type
+//BookCardWithPrize("zigzag","assest/testbg.jpg", 8291,11,"Bìa mềm")
+String BigCardInfo_Image = "assest/testbg.jpg";
+String BigCardInfo_Title = "Sách đắc nhân tâm";
+int BigCardInfo_PriceInt = 696969;
+double BigCardInfo_StarInt = 4.5;
+int BigCardInfo_AmountInt = 2;
+String BigCardInfo_Description = "huycutecutecutecutecutecute";
+//title-image-price-amount-rate-desc
+//BigCardInfo("Huy siêu siêu cute", "assest/testbg.jpg", 20000, 2, 3.5, "Huy siêu cute cute")
+String BookCardWithTotalPrize_Image = "assest/testbg.jpg";
+String BookCardWithTotalPrize_Title = "Hồ đắc nhân tâm";
+String BookCardWithTotalPrize_Type = "Bìa cứng";
+int BookCardWithTotalPrize_AmountInt = 10;
+int BookCardWithTotalPrize_PriceInt = 6969;
+//title-image-price-amount-rate-desc
+//BookCardWithTotalPrize("zigzag","assest/testbg.jpg", 8291,11,"Bìa mềm")
+//----------------------------------------------------------------------------------------------------------------------------
 
 class _DesignCardState extends State<DesignCard> {
   @override
@@ -31,14 +77,7 @@ class _DesignCardState extends State<DesignCard> {
     return Scaffold(
         backgroundColor: Colors.black,
         body: Column(
-          children: <Widget>[BookCardWithTotalPrize()],
+          children: <Widget>[],
         ));
   }
 }
-
-
-
-
-
-
-

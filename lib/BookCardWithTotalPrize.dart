@@ -10,7 +10,16 @@ import 'DesignCardView.dart';
 import 'navigate.dart';
 
 class BookCardWithTotalPrize extends StatefulWidget {
-  const BookCardWithTotalPrize({Key? key}) : super(key: key);
+  BookCardWithTotalPrize(
+      String Title, String Image, int Price, int Amount, String Type,
+      {Key? key})
+      : super(key: key) {
+    BookCardWithTotalPrize_Title = Title;
+    BookCardWithTotalPrize_Image = Image;
+    BookCardWithTotalPrize_PriceInt = Price;
+    BookCardWithTotalPrize_AmountInt = Amount;
+    BookCardWithTotalPrize_Type = Type;
+  }
 
   @override
   State<BookCardWithTotalPrize> createState() => _BookCardWithTotalPrizeState();
@@ -20,17 +29,15 @@ class _BookCardWithTotalPrizeState extends State<BookCardWithTotalPrize> {
   @override
   Widget build(BuildContext context) {
     //---------------------------------------------------------------
-    String BookCardWithTotalPrize_Image = "assest/testbg.jpg";
-    String BookCardWithTotalPrize_Title = "Hồ đắc nhân tâm";
-    String BookCardWithTotalPrize_Type = "Bìa cứng";
-    int BookCardWithTotalPrize_AmountInt = 10;
-    int BookCardWithTotalPrize_PriceInt = 6969;
+
     String BookCardWithTotalPrize_Amount =
-    BookCardWithTotalPrize_AmountInt.toString();
+        BookCardWithTotalPrize_AmountInt.toString();
     String BookCardWithTotalPrize_Price =
-    BookCardWithTotalPrize_PriceInt.toString();
-    int BookCardWithTotalPrize_TotalPriceInt=BookCardWithTotalPrize_PriceInt*BookCardWithTotalPrize_AmountInt;
-    String BookCardWithTotalPrize_TotalPrice=BookCardWithTotalPrize_TotalPriceInt.toString();
+        BookCardWithTotalPrize_PriceInt.toString();
+    int BookCardWithTotalPrize_TotalPriceInt =
+        BookCardWithTotalPrize_PriceInt * BookCardWithTotalPrize_AmountInt;
+    String BookCardWithTotalPrize_TotalPrice =
+        BookCardWithTotalPrize_TotalPriceInt.toString();
     //---------------------------------------------------------------
     return new Container(
       height: 138,

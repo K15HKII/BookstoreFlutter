@@ -10,7 +10,12 @@ import 'DesignCardView.dart';
 import 'navigate.dart';
 
 class PriceCard extends StatefulWidget {
-  const PriceCard({Key? key}) : super(key: key);
+  PriceCard(String Title, String Image, int Price, {Key? key})
+      : super(key: key) {
+    PriceCard_Title = Title;
+    PriceCard_Image = Image;
+    PriceCard_PriceInt = Price;
+  }
 
   @override
   State<PriceCard> createState() => _PriceCardState();
@@ -20,10 +25,9 @@ class _PriceCardState extends State<PriceCard> {
   @override
   Widget build(BuildContext context) {
     //-----------------------------------------------------------------
-    String PriceCard_Image = "assest/testbg.jpg";
-    int PriceCard_PriceInt = 696969;
+
     String PriceCard_Price = PriceCard_PriceInt.toString();
-    String PriceCard_Title = "Hồ đắc nhân tâm";
+
     //-----------------------------------------------------------------
     return new SizedBox(
       height: 223,

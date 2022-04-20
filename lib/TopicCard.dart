@@ -10,17 +10,16 @@ import 'DesignCardView.dart';
 import 'navigate.dart';
 
 class TopicCard extends StatefulWidget {
-  const TopicCard({Key? key}) : super(key: key);
+  TopicCard(String Topic, String Image, {Key? key}) : super(key: key) {
+    TopicCard_Topic = Topic;
+    TopicCard_Image = Image;
+  }
 
   @override
   State<TopicCard> createState() => _TopicCardState();
 }
 
 class _TopicCardState extends State<TopicCard> {
-  //-------------------------------------------------
-  String TopicCard_Topic = "Huycute";
-  String TopicCard_Image = "assest/testbg.jpg";
-  //-------------------------------------------------
   @override
   Widget build(BuildContext context) {
     return new SizedBox(

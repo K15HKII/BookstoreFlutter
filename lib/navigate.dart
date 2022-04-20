@@ -77,19 +77,7 @@ class _NavigatePageState extends State<NavigatePage> {
                 child: Text('registed'),
               ),
             ),
-            new Container(
-              color: Colors.black,
-              child: TextButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) =>
-                              DesignCardWithStar()));
-                },
-                child: Text('test'),
-              ),
-            ),
+
           ],
         ),
     );

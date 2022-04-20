@@ -10,7 +10,16 @@ import 'DesignCardView.dart';
 import 'navigate.dart';
 
 class BookCardWithPrize extends StatefulWidget {
-  const BookCardWithPrize({Key? key}) : super(key: key);
+  BookCardWithPrize(
+      String Title, String Image, int Price, int Amount, String Type,
+      {Key? key})
+      : super(key: key) {
+    BookCardWithPrize_Title = Title;
+    BookCardWithPrize_Image = Image;
+    BookCardWithPrize_PriceInt = Price;
+    BookCardWithPrize_AmountInt = Amount;
+    BookCardWithPrize_Type = Type;
+  }
 
   @override
   State<BookCardWithPrize> createState() => _BookCardWithPrizeState();
@@ -20,11 +29,7 @@ class _BookCardWithPrizeState extends State<BookCardWithPrize> {
   @override
   Widget build(BuildContext context) {
     //-----------------------------------------------------------------------
-    String BookCardWithPrize_Image = "assest/testbg.jpg";
-    String BookCardWithPrize_Title = "Hồ đắc nhân tâm";
-    String BookCardWithPrize_Type = "Bìa cứng";
-    int BookCardWithPrize_AmountInt = 69;
-    int BookCardWithPrize_PriceInt = 696969;
+
     String BookCardWithPrize_Amount = BookCardWithPrize_AmountInt.toString();
     String BookCardWithPrize_Price = BookCardWithPrize_PriceInt.toString();
     //-----------------------------------------------------------------------
