@@ -68,6 +68,9 @@ flutter:
     - assest/heartcheck.png
     - assest/starfull.png
     - assest/starhalf.png
+    - assest/minusbutton.png
+    - assest/plusbutton.png
+    - assest/trashcanicon.png
 
 
   fonts:

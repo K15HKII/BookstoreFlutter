@@ -3,6 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/painting/decoration_image.dart';
 import 'package:flutter/src/material/text_field.dart';
+import 'package:huy12345/BookCardAdd.dart';
 import 'PriceCardWithStar.dart';
 import 'PriceCard.dart';
 import 'TopicCard.dart';
@@ -69,6 +70,13 @@ int BookCardWithTotalPrize_AmountInt = 10;
 int BookCardWithTotalPrize_PriceInt = 6969;
 //title-image-price-amount-rate-desc
 //BookCardWithTotalPrize("zigzag","assest/testbg.jpg", 8291,11,"Bìa mềm")
+String BookCardAdd_Title = "Sách đắc nhân tâm";
+String BookCardAdd_Type = "bìa cứng";
+String BookCardAdd_Image = "assest/testbg.jpg";
+int BookCardAdd_PriceOriginInt = 6000;
+int BookCardAdd_CountInt = 0;
+//title-image-type-originPrice-amount(start_with_0)
+//BookCardAdd("Huy cutee", "assest/testbg.jpg","Bìa siêu mềm",10000,0)
 //----------------------------------------------------------------------------------------------------------------------------
 
 class _DesignCardState extends State<DesignCard> {
