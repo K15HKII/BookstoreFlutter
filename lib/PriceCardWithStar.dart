@@ -29,8 +29,20 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
     //------------------------------------------------------------------------
 
     String PriceCardWithStar_Price = PriceCardWithStar_PriceInt.toString();
-
     String PriceCardWithStar_Star = PriceCardWithStar_StarInt.toString();
+    String starfull = "assest/starfull.png";
+    String starhalf = "assest/starhalf.png";
+    String starempty = "assest/starempty.png";
+    String starpick = "";
+    if (PriceCardWithStar_StarInt >= 4) {
+      starpick = starfull;
+    }
+    if (PriceCardWithStar_StarInt < 4 && PriceCardWithStar_StarInt > 2) {
+      starpick = starhalf;
+    }
+    if (PriceCardWithStar_StarInt <= 2) {
+      starpick = starempty;
+    }
     //------------------------------------------------------------------------
     return new SizedBox(
       height: 260,
@@ -160,7 +172,7 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
                         width: 17.11,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage('assest/starfull.png'),
+                            image: AssetImage(starpick),
                             fit: BoxFit.fill,
                           ),
                         ),

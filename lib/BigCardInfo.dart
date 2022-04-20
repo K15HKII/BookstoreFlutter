@@ -30,7 +30,65 @@ class _BigCardInfoState extends State<BigCardInfo> {
   @override
   Widget build(BuildContext context) {
     //----------------------------------------------------------------
-
+    String starfull = "assest/starfull.png";
+    String starhalf = "assest/starhalf.png";
+    String starempty = "assest/starempty.png";
+    String star1=starfull;
+    String star2=starfull;
+    String star3=starfull;
+    String star4=starfull;
+    String star5=starfull;
+    if(BigCardInfo_StarInt>4.75){}
+    if(BigCardInfo_StarInt<=4.75&&BigCardInfo_StarInt>4.25){
+      star5=starhalf;
+    }
+    if(BigCardInfo_StarInt<=4.25&&BigCardInfo_StarInt>3.75){
+      star5=starempty;
+    }
+    if(BigCardInfo_StarInt<=3.75&&BigCardInfo_StarInt>3.25){
+      star5=starempty;
+      star4=starhalf;
+    }
+    if(BigCardInfo_StarInt<=3.25&&BigCardInfo_StarInt>2.75){
+      star5=starempty;
+      star4=starempty;
+    }
+    if(BigCardInfo_StarInt<=2.75&&BigCardInfo_StarInt>2.25){
+      star3=starhalf;
+      star5=starempty;
+      star4=starempty;
+    }
+    if(BigCardInfo_StarInt<=2.25&&BigCardInfo_StarInt>1.75){
+      star4=starempty;
+      star5=starempty;
+      star3=starempty;
+    }
+    if(BigCardInfo_StarInt<=1.75&&BigCardInfo_StarInt>1.25){
+      star2=starhalf;
+      star5=starempty;
+      star4=starempty;
+      star3=starempty;
+    }
+    if(BigCardInfo_StarInt<=1.25&&BigCardInfo_StarInt>0.75){
+      star4=starempty;
+      star5=starempty;
+      star3=starempty;
+      star2=starempty;
+    }
+    if(BigCardInfo_StarInt<=0.75&&BigCardInfo_StarInt>0.25){
+      star1=starhalf;
+      star5=starempty;
+      star4=starempty;
+      star3=starempty;
+      star2=starempty;
+    }
+    if(BigCardInfo_StarInt<=0.25){
+      star5=starempty;
+      star4=starempty;
+      star3=starempty;
+      star2=starempty;
+      star1=starempty;
+    }
     String BigCardInfo_Price = BigCardInfo_PriceInt.toString();
     String BigCardInfo_Amount = BigCardInfo_AmountInt.toString();
     //----------------------------------------------------------------
@@ -160,7 +218,7 @@ class _BigCardInfoState extends State<BigCardInfo> {
                         width: 17.11,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage('assest/starfull.png'),
+                            image: AssetImage(star1),
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -173,7 +231,7 @@ class _BigCardInfoState extends State<BigCardInfo> {
                         width: 17.11,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage('assest/starfull.png'),
+                            image: AssetImage(star2),
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -186,7 +244,7 @@ class _BigCardInfoState extends State<BigCardInfo> {
                         width: 17.11,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage('assest/starfull.png'),
+                            image: AssetImage(star3),
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -199,7 +257,7 @@ class _BigCardInfoState extends State<BigCardInfo> {
                         width: 17.11,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage('assest/starfull.png'),
+                            image: AssetImage(star4),
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -212,7 +270,7 @@ class _BigCardInfoState extends State<BigCardInfo> {
                         width: 17.11,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage('assest/starhalf.png'),
+                            image: AssetImage(star5),
                             fit: BoxFit.fill,
                           ),
                         ),

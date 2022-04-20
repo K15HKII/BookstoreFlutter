@@ -71,6 +71,7 @@ flutter:
     - assest/minusbutton.png
     - assest/plusbutton.png
     - assest/trashcanicon.png
+    - assest/starempty.png
 
 
   fonts:

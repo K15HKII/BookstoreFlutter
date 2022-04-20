@@ -38,6 +38,7 @@ String PriceCardWithStar_Title = "Sách đắc nhân tâm";
 double PriceCardWithStar_StarInt = 4.9;
 //title-image-price-rate
 //DesignCardWithStar("Con mèo đi hia", "assest/testbg.jpg",696969,4.9)
+//1-2 -> starempty 2-4 -> starhalf 4-5 -> starfull
 String TopicCard_Topic = "Huycute";
 String TopicCard_Image = "assest/testbg.jpg";
 //topic-image
