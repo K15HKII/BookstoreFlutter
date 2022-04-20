@@ -72,6 +72,11 @@ flutter:
     - assest/plusbutton.png
     - assest/trashcanicon.png
     - assest/starempty.png
+    - assest/uncheckcircle.png
+    - assest/checkcircle.png
+    - assest/testbg2.jpg
+    - assest/uncheckcircle.png
+    - assest/checkcircle.png
 
 
   fonts:

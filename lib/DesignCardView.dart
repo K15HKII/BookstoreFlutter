@@ -11,6 +11,7 @@ import 'BigCardInfo.dart';
 import 'BookCard.dart';
 import 'BookCardWithPrize.dart';
 import 'BookCardWithTotalPrize.dart';
+import 'SearchPanel.dart';
 
 class DesignCard extends StatefulWidget {
   const DesignCard({Key? key}) : super(key: key);
