@@ -8,6 +8,7 @@ import 'RegisterPage.dart';
 import 'ForgotPassPage.dart';
 import 'DesignCardView.dart';
 import 'navigate.dart';
+import 'package:buttons_tabbar/buttons_tabbar.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,

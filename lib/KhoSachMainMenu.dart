@@ -8,6 +8,7 @@ import 'RegisterPage.dart';
 import 'ForgotPassPage.dart';
 import 'DesignCardView.dart';
 import 'navigate.dart';
+import 'package:buttons_tabbar/buttons_tabbar.dart';
 
 class KhoSachMainMenu extends StatefulWidget {
   const KhoSachMainMenu({Key? key}) : super(key: key);
@@ -119,11 +120,29 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
               width: MediaQuery.of(context).size.width,
               height: 37,
               child: Text(
-                "Đánh giá",
+                "Kho sách",
                 style: TextStyle(fontFamily: "Lato", fontSize: 31),
               ),
             ),
           ),
+          SizedBox(height: 20,),
+          Container(height: 36,color: Colors.grey,child:
+          DefaultTabController(length: 5, child:
+          TabBar(
+            isScrollable: true,
+            unselectedLabelColor: Colors.white.withOpacity(0.3),
+            indicatorColor: Colors.white,
+            tabs: [
+              Tab(icon: Icon(Icons.home)),
+              Tab(child: Text("Huycute"),),
+              Tab(child: Text("Huycute"),),
+              Tab(child: Text("Huycute"),),
+              Tab(child: Text("Huycutssssssssssssssse"),),
+            ],
+          )
+
+          )
+            ,)
         ],
       ),
     );
