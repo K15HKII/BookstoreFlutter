@@ -9,6 +9,7 @@ import 'RegisterPage.dart';
 import 'ForgotPassPage.dart';
 import 'DesignCardView.dart';
 import 'PriceCardWithStar.dart';
+import 'KhoSachMainMenu.dart';
 
 class NavigatePage extends StatefulWidget {
   const NavigatePage({Key? key}) : super(key: key);
@@ -77,7 +78,19 @@ class _NavigatePageState extends State<NavigatePage> {
                 child: Text('registed'),
               ),
             ),
-
+            new Container(
+              color: Colors.black,
+              child: TextButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              KhoSachMainMenu()));
+                },
+                child: Text('khosachmainmenu'),
+              ),
+            ),
           ],
         ),
     );

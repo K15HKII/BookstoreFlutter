@@ -77,6 +77,9 @@ flutter:
     - assest/testbg2.jpg
     - assest/uncheckcircle.png
     - assest/checkcircle.png
+    - assest/filtericon.png
+    - assest/bellicon.png
+    - assest/shoppingcarticon.png
 
 
   fonts:
