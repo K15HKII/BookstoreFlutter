@@ -26,16 +26,31 @@ class _RegistedpageState extends State<Registedpage2> {
                 begin: Alignment.topCenter,
                 colors: [Color(0xffA9E4E4), Color(0xffFFFAFA)])),
         child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Image.asset(
-                'assest/background_image.png',
-                width: 500.0,
-                height: 170.0,
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.only(left: 17, right: 16.64, top: 10),
+                height: 160,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assest/background_image.png'),
+                    fit: BoxFit.fitHeight,
+                  ),
+                ),
               ),
-              DangKiText,
+              Text(
+                "Đăng kí",
+                style: TextStyle(
+                    color: Color(0xff001C44),
+                    fontSize: 31,
+                    fontFamily: 'Lato',
+                    shadows: <Shadow>[
+                      Shadow(
+                        offset: Offset(0, 4),
+                        blurRadius: 8.0,
+                        color: Color.fromARGB(90, 0, 0, 0),
+                      )
+                    ]),
+              ),
               Padding(
                 padding: EdgeInsets.only(bottom: 20),
               ),
@@ -45,7 +60,7 @@ class _RegistedpageState extends State<Registedpage2> {
                     width: 20,
                   ),
                   Expanded(
-                      child: Container(
+                      child: Container(height: 51,
                     padding: EdgeInsets.only(left: 30),
                     decoration: BoxDecoration(
                         color: Colors.white,
@@ -112,7 +127,7 @@ class _RegistedpageState extends State<Registedpage2> {
                     width: 20,
                   ),
                   Expanded(
-                      child: Container(
+                      child: Container(height: 51,
                     padding: EdgeInsets.only(left: 30),
                     decoration: BoxDecoration(
                         color: Colors.white,
@@ -132,7 +147,7 @@ class _RegistedpageState extends State<Registedpage2> {
                     width: 15,
                   ),
                   Expanded(
-                      child: Container(
+                      child: Container(height: 51,
                     padding: EdgeInsets.only(left: 30),
                     decoration: BoxDecoration(
                         color: Colors.white,
@@ -163,7 +178,7 @@ class _RegistedpageState extends State<Registedpage2> {
                     width: 20,
                   ),
                   Expanded(
-                      child: Container(
+                      child: Container(height: 51,
                     padding: EdgeInsets.only(left: 30),
                     decoration: BoxDecoration(
                         color: Colors.white,
@@ -193,7 +208,7 @@ class _RegistedpageState extends State<Registedpage2> {
                     width: 20,
                   ),
                   Expanded(
-                      child: Container(
+                      child: Container(height: 51,
                     padding: EdgeInsets.only(left: 30),
                     decoration: BoxDecoration(
                         color: Colors.white,
@@ -237,7 +252,7 @@ class _RegistedpageState extends State<Registedpage2> {
                     width: 20,
                   ),
                   Expanded(
-                      child: Container(
+                      child: Container(height: 51,
                     padding: EdgeInsets.only(left: 30),
                     decoration: BoxDecoration(
                         color: Colors.white,
@@ -323,6 +338,7 @@ class _RegistedpageState extends State<Registedpage2> {
                   ),
                 )),
               ),
+
             ]),
       ),
     );

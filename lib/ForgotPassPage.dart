@@ -140,21 +140,16 @@ class _ForgotPassState extends State<ForgotPass> {
               ],
             ),
           ),
-          Center(
-
-            child:(
-                Image.asset(
-                  'assest/background_image.png', width: 500.0, height: 240.0,
-                )
-            )
-
-
-
-
-
-
-
-          )
+          Container(
+            padding: EdgeInsets.only(left: 25.64, right: 8, top: 32),
+            height: 212,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assest/background_image.png'),
+                fit: BoxFit.fitHeight,
+              ),
+            ),
+          ),
         ],
 
       )
