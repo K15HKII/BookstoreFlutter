@@ -132,7 +132,7 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
             height: 20,
           ),
           Container(
-              height: 500,
+              height: 514,
               child: DefaultTabController(
                 length: 5,
                 child: Column(
@@ -183,7 +183,7 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                                   ))),
                         ]),
                     SizedBox(
-                      height: 400,
+                      height: 468,
                       width: 350,
                       child: TabBarView(
                         children: [
@@ -205,7 +205,8 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                               Container(
                                 height: 260,
                                 width: 172,
-                                child: Text("Huycute")
+                                child: DesignCardWithStar("Con mèo đi hia",
+                                    "assest/testbg.jpg", 696969, 4.9),
                               ),
                                Container(
                                 height: 260,
@@ -228,8 +229,8 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                               Container(
                                 height: 260,
                                 width: 172,
-                                child: DesignCardWithStar("Con chó đi hia",
-                                    "assest/testbg2.jpg", 696969, 4.9),
+                                child: DesignCardWithStar("AAAAAAAAAa",
+                                    "assest/testbg.jpg", 696969, 4.9),
                               ),
                             ],
                           ),
@@ -243,6 +244,30 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                   ],
                 ),
               ))
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+          type : BottomNavigationBarType.fixed,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.payment),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_box),
+            label: '',
+          ),
+
         ],
       ),
     );
