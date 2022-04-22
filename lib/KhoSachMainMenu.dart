@@ -11,6 +11,8 @@ import 'DesignCardView.dart';
 import 'navigate.dart';
 import 'package:buttons_tabbar/buttons_tabbar.dart';
 import 'PriceCardWithStar.dart';
+import 'SearchPanel.dart';
+import 'package:flutter/cupertino.dart';
 
 class KhoSachMainMenu extends StatefulWidget {
   const KhoSachMainMenu({Key? key}) : super(key: key);
@@ -75,7 +77,16 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                                   fit: BoxFit.fill,
                                   child: Container(
                                     child: TextButton(
-                                      onPressed: null,
+                                      onPressed: () {
+                                        showDialog(
+                                            context: context,
+                                            useRootNavigator: true,
+                                            builder: (
+                                              BuildContext context,
+                                            ) {
+                                              return SearchPanel();
+                                            });
+                                      },
                                       child: Text(''),
                                     ),
                                   ),
