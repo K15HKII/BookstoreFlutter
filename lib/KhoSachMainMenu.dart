@@ -9,6 +9,7 @@ import 'ForgotPassPage.dart';
 import 'DesignCardView.dart';
 import 'navigate.dart';
 import 'package:buttons_tabbar/buttons_tabbar.dart';
+import 'PriceCardWithStar.dart';
 
 class KhoSachMainMenu extends StatefulWidget {
   const KhoSachMainMenu({Key? key}) : super(key: key);
@@ -113,7 +114,9 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
               ],
             ),
           ),
-          SizedBox(height: 11,),
+          SizedBox(
+            height: 11,
+          ),
           Padding(
             padding: EdgeInsets.only(left: 23.5),
             child: Container(
@@ -125,24 +128,121 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
               ),
             ),
           ),
-          SizedBox(height: 20,),
-          Container(height: 36,color: Colors.grey,child:
-          DefaultTabController(length: 5, child:
-          TabBar(
-            isScrollable: true,
-            unselectedLabelColor: Colors.white.withOpacity(0.3),
-            indicatorColor: Colors.white,
-            tabs: [
-              Tab(icon: Icon(Icons.home)),
-              Tab(child: Text("Huycute"),),
-              Tab(child: Text("Huycute"),),
-              Tab(child: Text("Huycute"),),
-              Tab(child: Text("Huycutssssssssssssssse"),),
-            ],
-          )
-
-          )
-            ,)
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+              height: 500,
+              child: DefaultTabController(
+                length: 5,
+                child: Column(
+                  children: <Widget>[
+                    ButtonsTabBar(
+                        backgroundColor: Color(0xff001C44),
+                        unselectedBackgroundColor: Color(0xffCDD6D9),
+                        labelStyle: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
+                        unselectedLabelStyle: TextStyle(
+                            color: Colors.grey, fontWeight: FontWeight.bold),
+                        radius: 100,
+                        tabs: [
+                          Tab(
+                            child: new Container(
+                              width: 56,
+                              height: 36,
+                              child: Icon(Icons.home),
+                            ),
+                          ),
+                          Tab(
+                              child: new Container(
+                                  width: 69,
+                                  child: Text(
+                                    "Tất cả",
+                                    textAlign: TextAlign.center,
+                                  ))),
+                          Tab(
+                              child: new Container(
+                                  width: 87,
+                                  child: Text(
+                                    "Phổ biến",
+                                    textAlign: TextAlign.center,
+                                  ))),
+                          Tab(
+                              child: new Container(
+                                  width: 83,
+                                  child: Text(
+                                    "Gần đây",
+                                    textAlign: TextAlign.center,
+                                  ))),
+                          Tab(
+                              child: new Container(
+                                  width: 118,
+                                  child: Text(
+                                    "Dành cho tôi",
+                                    textAlign: TextAlign.center,
+                                  ))),
+                        ]),
+                    SizedBox(
+                      height: 400,
+                      width: 350,
+                      child: TabBarView(
+                        children: [
+                          GridView.count(
+                            scrollDirection: Axis.vertical,
+                            shrinkWrap: true,
+                            padding: const EdgeInsets.only(bottom: 200),
+                            crossAxisSpacing: 8,
+                            mainAxisSpacing: 12,
+                            crossAxisCount: 2,
+                            childAspectRatio: 2/3,
+                            children: <Widget>[
+                              Container(
+                                height: 260,
+                                width: 172,
+                                child: DesignCardWithStar("Con mèo đi hia",
+                                    "assest/testbg.jpg", 696969, 4.9),
+                              ),
+                              Container(
+                                height: 260,
+                                width: 172,
+                                child: Text("Huycute")
+                              ),
+                               Container(
+                                height: 260,
+                                width: 172,
+                                child: DesignCardWithStar("Con mèo đi hia",
+                                    "assest/testbg.jpg", 696969, 4.9),
+                              ),
+                              Container(
+                                height: 260,
+                                width: 172,
+                                child: DesignCardWithStar("Con mèo đi hia",
+                                    "assest/testbg.jpg", 696969, 4.9),
+                              ),
+                              Container(
+                                height: 260,
+                                width: 172,
+                                child: DesignCardWithStar("Con mèo đi hia",
+                                    "assest/testbg.jpg", 696969, 4.9),
+                              ),
+                              Container(
+                                height: 260,
+                                width: 172,
+                                child: DesignCardWithStar("Con chó đi hia",
+                                    "assest/testbg2.jpg", 696969, 4.9),
+                              ),
+                            ],
+                          ),
+                          Icon(Icons.directions_transit),
+                          Icon(Icons.directions_bike),
+                          Icon(Icons.directions_car),
+                          Icon(Icons.directions_transit),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ))
         ],
       ),
     );

@@ -24,6 +24,7 @@ class DesignCardWithStar extends StatefulWidget {
 }
 
 class _DesignCardWithStarState extends State<DesignCardWithStar> {
+
   @override
   Widget build(BuildContext context) {
     //------------------------------------------------------------------------
