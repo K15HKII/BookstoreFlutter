@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/painting/decoration_image.dart';
@@ -183,10 +184,171 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                                   ))),
                         ]),
                     SizedBox(
-                      height: 468,
+                      height: 25,
+                    ),
+                    SizedBox(
+                      height: 425,
                       width: 350,
                       child: TabBarView(
                         children: [
+                          new Container(
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10)),
+                            child: MediaQuery.removePadding(
+                              context: context,
+                              removeTop: true,
+                              child: ListView(
+                                children: [
+                                  new Container(
+                                    padding: EdgeInsets.only(
+                                        left: 24, top: 16, bottom: 16),
+                                    decoration: BoxDecoration(
+                                        border: Border(
+                                            bottom: BorderSide(
+                                                width: 1,
+                                                color: Color(0xffBCFEFE)))),
+                                    width: 350,
+                                    height: 51,
+                                    child: Text(
+                                      "Văn học",
+                                      style: TextStyle(
+                                          fontSize: 16, fontFamily: "Lato"),
+                                    ),
+                                  ),
+                                  new Container(
+                                    padding: EdgeInsets.only(
+                                        left: 24, top: 16, bottom: 16),
+                                    decoration: BoxDecoration(
+                                        border: Border(
+                                            bottom: BorderSide(
+                                                width: 1,
+                                                color: Color(0xffBCFEFE)))),
+                                    width: 350,
+                                    height: 51,
+                                    child: Text(
+                                      "Văn học",
+                                      style: TextStyle(
+                                          fontSize: 16, fontFamily: "Lato"),
+                                    ),
+                                  ),
+                                  new Container(
+                                    padding: EdgeInsets.only(
+                                        left: 24, top: 16, bottom: 16),
+                                    decoration: BoxDecoration(
+                                        border: Border(
+                                            bottom: BorderSide(
+                                                width: 1,
+                                                color: Color(0xffBCFEFE)))),
+                                    width: 350,
+                                    height: 51,
+                                    child: Text(
+                                      "Văn học",
+                                      style: TextStyle(
+                                          fontSize: 16, fontFamily: "Lato"),
+                                    ),
+                                  ),
+                                  new Container(
+                                    padding: EdgeInsets.only(
+                                        left: 24, top: 16, bottom: 16),
+                                    decoration: BoxDecoration(
+                                        border: Border(
+                                            bottom: BorderSide(
+                                                width: 1,
+                                                color: Color(0xffBCFEFE)))),
+                                    width: 350,
+                                    height: 51,
+                                    child: Text(
+                                      "Văn học",
+                                      style: TextStyle(
+                                          fontSize: 16, fontFamily: "Lato"),
+                                    ),
+                                  ),
+                                  new Container(
+                                    padding: EdgeInsets.only(
+                                        left: 24, top: 16, bottom: 16),
+                                    decoration: BoxDecoration(
+                                        border: Border(
+                                            bottom: BorderSide(
+                                                width: 1,
+                                                color: Color(0xffBCFEFE)))),
+                                    width: 350,
+                                    height: 51,
+                                    child: Text(
+                                      "Văn học",
+                                      style: TextStyle(
+                                          fontSize: 16, fontFamily: "Lato"),
+                                    ),
+                                  ),
+                                  new Container(
+                                    padding: EdgeInsets.only(
+                                        left: 24, top: 16, bottom: 16),
+                                    decoration: BoxDecoration(
+                                        border: Border(
+                                            bottom: BorderSide(
+                                                width: 1,
+                                                color: Color(0xffBCFEFE)))),
+                                    width: 350,
+                                    height: 51,
+                                    child: Text(
+                                      "Văn học",
+                                      style: TextStyle(
+                                          fontSize: 16, fontFamily: "Lato"),
+                                    ),
+                                  ),
+                                  new Container(
+                                    padding: EdgeInsets.only(
+                                        left: 24, top: 16, bottom: 16),
+                                    decoration: BoxDecoration(
+                                        border: Border(
+                                            bottom: BorderSide(
+                                                width: 1,
+                                                color: Color(0xffBCFEFE)))),
+                                    width: 350,
+                                    height: 51,
+                                    child: Text(
+                                      "Văn học",
+                                      style: TextStyle(
+                                          fontSize: 16, fontFamily: "Lato"),
+                                    ),
+                                  ),
+                                  new Container(
+                                    padding: EdgeInsets.only(
+                                        left: 24, top: 16, bottom: 16),
+                                    decoration: BoxDecoration(
+                                        border: Border(
+                                            bottom: BorderSide(
+                                                width: 1,
+                                                color: Color(0xffBCFEFE)))),
+                                    width: 350,
+                                    height: 51,
+                                    child: Text(
+                                      "Văn học",
+                                      style: TextStyle(
+                                          fontSize: 16, fontFamily: "Lato"),
+                                    ),
+                                  ),
+                                  new Container(
+                                    padding: EdgeInsets.only(
+                                        left: 24, top: 16, bottom: 16),
+                                    decoration: BoxDecoration(
+                                        border: Border(
+                                            bottom: BorderSide(
+                                                width: 1,
+                                                color: Color(0xffBCFEFE)))),
+                                    width: 350,
+                                    height: 51,
+                                    child: Text(
+                                      "Văn học",
+                                      style: TextStyle(
+                                          fontSize: 16, fontFamily: "Lato"),
+                                    ),
+                                  ),
+                                ],
+                                scrollDirection: Axis.vertical,
+                              ),
+                            ),
+                          ),
                           GridView.count(
                             scrollDirection: Axis.vertical,
                             shrinkWrap: true,
@@ -194,7 +356,7 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                             crossAxisSpacing: 8,
                             mainAxisSpacing: 12,
                             crossAxisCount: 2,
-                            childAspectRatio: 2/3,
+                            childAspectRatio: 2 / 3,
                             children: <Widget>[
                               Container(
                                 height: 260,
@@ -208,7 +370,7 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                                 child: DesignCardWithStar("Con mèo đi hia",
                                     "assest/testbg.jpg", 696969, 4.9),
                               ),
-                               Container(
+                              Container(
                                 height: 260,
                                 width: 172,
                                 child: DesignCardWithStar("Con mèo đi hia",
@@ -234,7 +396,6 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                               ),
                             ],
                           ),
-                          Icon(Icons.directions_transit),
                           Icon(Icons.directions_bike),
                           Icon(Icons.directions_car),
                           Icon(Icons.directions_transit),
@@ -247,7 +408,7 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-          type : BottomNavigationBarType.fixed,
+        type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         items: const <BottomNavigationBarItem>[
@@ -267,7 +428,6 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
             icon: Icon(Icons.account_box),
             label: '',
           ),
-
         ],
       ),
     );
