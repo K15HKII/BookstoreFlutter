@@ -1,14 +1,8 @@
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
 import 'package:huy12345/ForgotPassPage.dart';
 import 'RegisterPage.dart';
 import 'ForgotPassPage.dart';
-import 'DesignCardView.dart';
 import 'navigate.dart';
-import 'package:buttons_tabbar/buttons_tabbar.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -30,23 +24,23 @@ class _FirstRouteState extends State<FirstRoute> {
     return Scaffold(
       body: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 colors: [Color(0xffA9E4E4), Color(0xffFFFAFA)])),
         child: Column(
           children: <Widget>[
             Container(
-              padding: EdgeInsets.only(left: 17, right: 16.64, top: 10),
+              padding: const EdgeInsets.only(left: 17, right: 16.64, top: 10),
               height: 240,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assest/background_image.png'),
                   fit: BoxFit.fitHeight,
                 ),
               ),
             ),
-            Text(
+            const Text(
               "App Name",
               style: TextStyle(
                   color: Color(0xff001C44),
@@ -60,51 +54,51 @@ class _FirstRouteState extends State<FirstRoute> {
                     )
                   ]),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 23, right: 24),
-              child: new Container(
+              padding: const EdgeInsets.only(left: 23, right: 24),
+              child: Container(
                 height: 55,
-                padding: EdgeInsets.only(left: 30),
+                padding: const EdgeInsets.only(left: 30),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(25),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                           color: Color.fromARGB(90, 0, 0, 0),
                           blurRadius: 20,
                           offset: Offset(0, 10))
                     ]),
-                child: new TextField(
+                child: const TextField(
                   decoration: InputDecoration(
                       labelText: "Tên đăng nhập", border: InputBorder.none),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 12,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 23, right: 24),
-              child: new Container(
+              padding: const EdgeInsets.only(left: 23, right: 24),
+              child: Container(
                 height: 55,
-                padding: EdgeInsets.only(left: 30),
+                padding: const EdgeInsets.only(left: 30),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(25),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                           color: Color.fromARGB(90, 0, 0, 0),
                           blurRadius: 20,
                           offset: Offset(0, 10))
                     ]),
-                child: new TextField(
+                child: TextField(
                   decoration: InputDecoration(
                       labelText: "Mật khẩu",
                       suffixIcon: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.visibility,
                         ),
                         onPressed: () {
@@ -120,11 +114,11 @@ class _FirstRouteState extends State<FirstRoute> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 14,
             ),
             Padding(
-              padding: EdgeInsets.only(right: 25, left: 263),
+              padding: const EdgeInsets.only(right: 25, left: 263),
               child: InkWell(
                 onTap: () {
                   Navigator.push(
@@ -132,23 +126,23 @@ class _FirstRouteState extends State<FirstRoute> {
                       MaterialPageRoute(
                           builder: (context) => const ForgotPass()));
                 },
-                child: Text(
+                child: const Text(
                   'Quên mật khẩu?',
                   style: TextStyle(color: Color(0xff024c5e)),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 14,
             ),
             Container(
               height: 48,
               width: 155,
-              margin: EdgeInsets.symmetric(horizontal: 90),
+              margin: const EdgeInsets.symmetric(horizontal: 90),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
-                color: Color(0xff0C5776),
-                boxShadow: [
+                color: const Color(0xff0C5776),
+                boxShadow: const [
                   BoxShadow(
                     color: Colors.grey,
                     blurRadius: 8,
@@ -163,51 +157,51 @@ class _FirstRouteState extends State<FirstRoute> {
                       MaterialStateProperty.all<Color>(Colors.blue),
                 ),
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   "Đăng nhập",
                   style: TextStyle(
                       color: Colors.white, fontSize: 16, fontFamily: "Lato"),
                 ),
               )),
             ),
-            SizedBox(
+            const SizedBox(
               height: 48,
             ),
-            Text("Đăng nhập bằng tài khoản",
+            const Text("Đăng nhập bằng tài khoản",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 16,
                 )),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Container(
+            SizedBox(
               width: 200,
               child: Center(
                 child: Row(
                   children: <Widget>[
-                    SizedBox(
+                    const SizedBox(
                       width: 20,
                     ),
-                    new Container(
+                    Container(
                         height: 24,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage('assest/ggicon.png'),
                           ),
                         ),
                         child: Container(
-                          child: TextButton(
+                          child: const TextButton(
                             onPressed: null,
                             child: Text(''),
                           ),
                         )),
-                    SizedBox(
+                    const SizedBox(
                       width: 20,
                     ),
-                    new Container(
+                    Container(
                         height: 24,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage('assest/fbicon.png'),
                           ),
@@ -221,31 +215,31 @@ class _FirstRouteState extends State<FirstRoute> {
                                       builder: (context) =>
                                           const NavigatePage()));
                             },
-                            child: Text(''),
+                            child: const Text(''),
                           ),
                         ))
                   ],
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            new Container(
+            SizedBox(
               width: 220,
               child: Center(
                 child: Row(
                   children: <Widget>[
-                    new Container(
-                      child: Text(
+                    Container(
+                      child: const Text(
                         "Bạn chưa có tài khoản",
                         style: TextStyle(fontSize: 12),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
-                    new Container(
+                    Container(
                       child: InkWell(
                         onTap: () {
                           Navigator.push(
@@ -253,7 +247,7 @@ class _FirstRouteState extends State<FirstRoute> {
                               MaterialPageRoute(
                                   builder: (context) => const Registedpage2()));
                         },
-                        child: Text(
+                        child: const Text(
                           'Đăng kí',
                           style: TextStyle(
                               color: Color(0xff024C5E),

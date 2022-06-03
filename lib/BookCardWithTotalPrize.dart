@@ -1,13 +1,5 @@
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/ForgotPassPage.dart';
-import 'RegisterPage.dart';
-import 'ForgotPassPage.dart';
 import 'DesignCardView.dart';
-import 'navigate.dart';
 
 class BookCardWithTotalPrize extends StatefulWidget {
   BookCardWithTotalPrize(
@@ -30,25 +22,25 @@ class _BookCardWithTotalPrizeState extends State<BookCardWithTotalPrize> {
   Widget build(BuildContext context) {
     //---------------------------------------------------------------
 
-    String BookCardWithTotalPrize_Amount =
+    String BookCardWithTotalPrizeAmount =
         BookCardWithTotalPrize_AmountInt.toString();
-    String BookCardWithTotalPrize_Price =
+    String BookCardWithTotalPrizePrice =
         BookCardWithTotalPrize_PriceInt.toString();
-    int BookCardWithTotalPrize_TotalPriceInt =
+    int BookCardWithTotalPrizeTotalPriceInt =
         BookCardWithTotalPrize_PriceInt * BookCardWithTotalPrize_AmountInt;
-    String BookCardWithTotalPrize_TotalPrice =
-        BookCardWithTotalPrize_TotalPriceInt.toString();
+    String BookCardWithTotalPrizeTotalPrice =
+        BookCardWithTotalPrizeTotalPriceInt.toString();
     //---------------------------------------------------------------
-    return new Container(
+    return Container(
       height: 138,
       width: 327,
       color: Colors.white,
       child: Column(
         children: <Widget>[
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
-          new Row(
+          Row(
             children: <Widget>[
               Container(
                   height: 68,
@@ -59,15 +51,15 @@ class _BookCardWithTotalPrizeState extends State<BookCardWithTotalPrize> {
                       fit: BoxFit.fitHeight,
                     ),
                   )),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
-              Container(
+              SizedBox(
                 height: 68,
                 width: 150,
                 child: Column(
                   children: <Widget>[
-                    SizedBox(
+                    const SizedBox(
                       height: 6,
                     ),
                     Align(
@@ -75,7 +67,7 @@ class _BookCardWithTotalPrizeState extends State<BookCardWithTotalPrize> {
                       child: Container(
                         child: Text(
                           BookCardWithTotalPrize_Title,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 16,
                             fontFamily: "Lato",
                             color: Colors.black,
@@ -84,7 +76,7 @@ class _BookCardWithTotalPrizeState extends State<BookCardWithTotalPrize> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Align(
@@ -92,7 +84,7 @@ class _BookCardWithTotalPrizeState extends State<BookCardWithTotalPrize> {
                       child: Container(
                         child: Text(
                           BookCardWithTotalPrize_Type,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 12,
                             fontFamily: "Lato",
                             color: Color(0xff636363),
@@ -104,14 +96,14 @@ class _BookCardWithTotalPrizeState extends State<BookCardWithTotalPrize> {
                   ],
                 ),
               ),
-              new Column(
+              Column(
                 children: <Widget>[
-                  new Row(
+                  Row(
                     children: <Widget>[
-                      SizedBox(
+                      const SizedBox(
                         width: 35,
                       ),
-                      new Container(
+                      const SizedBox(
                         width: 9,
                         height: 19,
                         child: Text(
@@ -124,18 +116,18 @@ class _BookCardWithTotalPrizeState extends State<BookCardWithTotalPrize> {
                           textAlign: TextAlign.left,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
-                      new Row(
-                        children: <Widget>[],
+                      Row(
+                        children: const <Widget>[],
                       ),
-                      new Container(
+                      SizedBox(
                         width: 48,
                         height: 19,
                         child: Text(
-                          BookCardWithTotalPrize_Amount,
-                          style: TextStyle(
+                          BookCardWithTotalPrizeAmount,
+                          style: const TextStyle(
                             fontSize: 18,
                             fontFamily: "Lato",
                             color: Colors.black,
@@ -145,20 +137,20 @@ class _BookCardWithTotalPrizeState extends State<BookCardWithTotalPrize> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 7,
                   ),
-                  new Row(
+                  Row(
                     children: <Widget>[
                       Text(
-                        BookCardWithTotalPrize_Price,
-                        style: TextStyle(
+                        BookCardWithTotalPrizePrice,
+                        style: const TextStyle(
                           fontSize: 11,
                           fontFamily: "Lato",
                           color: Color(0xff001c44),
                         ),
                       ),
-                      Text(
+                      const Text(
                         " đ",
                         style: TextStyle(
                           fontSize: 11,
@@ -172,15 +164,15 @@ class _BookCardWithTotalPrizeState extends State<BookCardWithTotalPrize> {
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          new Row(
+          Row(
             children: <Widget>[
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
-              Text(
+              const Text(
                 "Note",
                 style: TextStyle(
                   fontSize: 12,
@@ -188,10 +180,10 @@ class _BookCardWithTotalPrizeState extends State<BookCardWithTotalPrize> {
                   color: Color(0xff636363),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 105,
               ),
-              Text(
+              const Text(
                 "Thành tiền ",
                 style: TextStyle(
                   fontSize: 17,
@@ -200,14 +192,14 @@ class _BookCardWithTotalPrizeState extends State<BookCardWithTotalPrize> {
                 ),
               ),
               Text(
-                BookCardWithTotalPrize_TotalPrice,
-                style: TextStyle(
+                BookCardWithTotalPrizeTotalPrice,
+                style: const TextStyle(
                   fontSize: 17,
                   fontFamily: "Lato",
                   color: Colors.red,
                 ),
               ),
-              Text(
+              const Text(
                 " đ",
                 style: TextStyle(
                   fontSize: 17,

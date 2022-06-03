@@ -1,13 +1,5 @@
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/ForgotPassPage.dart';
-import 'RegisterPage.dart';
-import 'ForgotPassPage.dart';
 import 'DesignCardView.dart';
-import 'navigate.dart';
 
 class PriceCard extends StatefulWidget {
   PriceCard(String Title, String Image, int Price, {Key? key})
@@ -26,10 +18,10 @@ class _PriceCardState extends State<PriceCard> {
   Widget build(BuildContext context) {
     //-----------------------------------------------------------------
 
-    String PriceCard_Price = PriceCard_PriceInt.toString();
+    String PriceCardPrice = PriceCard_PriceInt.toString();
 
     //-----------------------------------------------------------------
-    return new SizedBox(
+    return SizedBox(
       height: 223,
       width: 155,
       child: DecoratedBox(
@@ -49,27 +41,27 @@ class _PriceCardState extends State<PriceCard> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Center(
               child: Row(
                 children: <Widget>[
-                  SizedBox(
+                  const SizedBox(
                     width: 15,
                   ),
-                  new Container(
+                  SizedBox(
                     width: 102,
                     height: 14,
                     child: Text(
                       PriceCard_Title,
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: 12,
                           color: Colors.black,
                           fontFamily: "Lato"),
                     ),
                   ),
-                  new Container(
+                  Container(
                     height: 21,
                     width: 18,
                     decoration: BoxDecoration(
@@ -79,7 +71,7 @@ class _PriceCardState extends State<PriceCard> {
                     ),
                     child: Container(
                         child: TextButton(
-                            child: Text(""),
+                            child: const Text(""),
                             onPressed: () {
                               PriceCard_HeartInt += 1;
                               if (PriceCard_HeartInt % 2 == 1) {
@@ -97,17 +89,17 @@ class _PriceCardState extends State<PriceCard> {
                 ],
               ),
             ),
-            new Container(
+            SizedBox(
                 width: 125,
                 height: 19,
                 child: Row(
                   children: <Widget>[
                     Text(
-                      PriceCard_Price,
-                      style: TextStyle(
+                      PriceCardPrice,
+                      style: const TextStyle(
                           fontSize: 16, fontFamily: "Lato", color: Colors.red),
                     ),
-                    Text(
+                    const Text(
                       "đ",
                       style: TextStyle(
                           fontSize: 16, fontFamily: "Lato", color: Colors.red),

@@ -1,13 +1,5 @@
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/ForgotPassPage.dart';
-import 'RegisterPage.dart';
-import 'ForgotPassPage.dart';
 import 'DesignCardView.dart';
-import 'navigate.dart';
 
 class BigCardInfo extends StatefulWidget {
   BigCardInfo(String Title, String Image, int Price, int Amount, double Rate,
@@ -89,10 +81,10 @@ class _BigCardInfoState extends State<BigCardInfo> {
       star2 = starempty;
       star1 = starempty;
     }
-    String BigCardInfo_Price = BigCardInfo_PriceInt.toString();
-    String BigCardInfo_Amount = BigCardInfo_AmountInt.toString();
+    String BigCardInfoPrice = BigCardInfo_PriceInt.toString();
+    String BigCardInfoAmount = BigCardInfo_AmountInt.toString();
     //----------------------------------------------------------------
-    return new SizedBox(
+    return SizedBox(
       height: 525,
       width: 375,
       child: DecoratedBox(
@@ -112,37 +104,37 @@ class _BigCardInfoState extends State<BigCardInfo> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Row(
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   width: 12,
                 ),
-                new Container(
-                  decoration: BoxDecoration(),
+                Container(
+                  decoration: const BoxDecoration(),
                   height: 59,
                   width: 320,
                   child: Column(
                     children: <Widget>[
-                      new Row(
+                      Row(
                         children: <Widget>[
-                          new Container(
+                          SizedBox(
                             width: 250,
                             child: Text(
                               BigCardInfo_Title,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 20,
                                   color: Colors.black,
                                   fontFamily: "Lato"),
                               textAlign: TextAlign.left,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 50,
                           ),
-                          new Container(
+                          Container(
                             height: 21,
                             width: 18,
                             decoration: BoxDecoration(
@@ -152,7 +144,7 @@ class _BigCardInfoState extends State<BigCardInfo> {
                             ),
                             child: Container(
                                 child: TextButton(
-                                    child: Text(""),
+                                    child: const Text(""),
                                     onPressed: () {
                                       BigCardInfo_HeartInt += 1;
                                       if (BigCardInfo_HeartInt % 2 == 1) {
@@ -171,19 +163,19 @@ class _BigCardInfoState extends State<BigCardInfo> {
                           )
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 6,
                       ),
-                      new Row(
+                      Row(
                         children: <Widget>[
                           Text(
-                            BigCardInfo_Price,
-                            style: TextStyle(
+                            BigCardInfoPrice,
+                            style: const TextStyle(
                                 fontSize: 24,
                                 fontFamily: "Lato",
                                 color: Colors.red),
                           ),
-                          Text(
+                          const Text(
                             "đ",
                             style: TextStyle(
                                 fontSize: 24,
@@ -197,23 +189,23 @@ class _BigCardInfoState extends State<BigCardInfo> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 6,
             ),
-            new Row(
+            Row(
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   width: 16,
                 ),
-                new Container(
+                SizedBox(
                   height: 24,
                   width: 136,
                   child: Row(
                     children: <Widget>[
-                      SizedBox(
+                      const SizedBox(
                         width: 3.44,
                       ),
-                      new Container(
+                      Container(
                         height: 16.36,
                         width: 17.11,
                         decoration: BoxDecoration(
@@ -223,10 +215,10 @@ class _BigCardInfoState extends State<BigCardInfo> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10.89,
                       ),
-                      new Container(
+                      Container(
                         height: 16.36,
                         width: 17.11,
                         decoration: BoxDecoration(
@@ -236,10 +228,10 @@ class _BigCardInfoState extends State<BigCardInfo> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10.89,
                       ),
-                      new Container(
+                      Container(
                         height: 16.36,
                         width: 17.11,
                         decoration: BoxDecoration(
@@ -249,10 +241,10 @@ class _BigCardInfoState extends State<BigCardInfo> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10.89,
                       ),
-                      new Container(
+                      Container(
                         height: 16.36,
                         width: 17.11,
                         decoration: BoxDecoration(
@@ -262,10 +254,10 @@ class _BigCardInfoState extends State<BigCardInfo> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10.89,
                       ),
-                      new Container(
+                      Container(
                         height: 16.36,
                         width: 17.11,
                         decoration: BoxDecoration(
@@ -280,10 +272,10 @@ class _BigCardInfoState extends State<BigCardInfo> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
-            new Container(
+            const SizedBox(
               height: 18,
               width: 350,
               child: Text(
@@ -292,22 +284,22 @@ class _BigCardInfoState extends State<BigCardInfo> {
                     fontSize: 16, fontFamily: "Lato", color: Color(0xff636363)),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
-            new Container(
+            SizedBox(
               height: 19,
               width: 350,
               child: Text(
-                BigCardInfo_Amount,
-                style: TextStyle(
+                BigCardInfoAmount,
+                style: const TextStyle(
                     fontSize: 20, fontFamily: "Lato", color: Colors.red),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
-            new Container(
+            const SizedBox(
               height: 18,
               width: 350,
               child: Text(
@@ -319,15 +311,15 @@ class _BigCardInfoState extends State<BigCardInfo> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
-            new Container(
+            SizedBox(
               height: 18,
               width: 350,
               child: Text(
                 BigCardInfo_Description,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   fontFamily: "Lato",
                   color: Colors.black,

@@ -1,14 +1,9 @@
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
 import 'package:huy12345/ForgotPassPage.dart';
 import 'package:huy12345/main.dart';
 import 'RegisterPage.dart';
 import 'ForgotPassPage.dart';
 import 'DesignCardView.dart';
-import 'PriceCardWithStar.dart';
 import 'KhoSachMainMenu.dart';
 
 class NavigatePage extends StatefulWidget {
@@ -24,9 +19,9 @@ class _NavigatePageState extends State<NavigatePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: new Column(
+        body: Column(
           children: <Widget>[
-            new Container(
+            Container(
               color: Colors.black,
               child: TextButton(
                 onPressed: () {
@@ -36,10 +31,10 @@ class _NavigatePageState extends State<NavigatePage> {
                           builder: (context) =>
                            FirstRoute()));
                 },
-                child: Text('main'),
+                child: const Text('main'),
               ),
             ),
-            new Container(
+            Container(
               color: Colors.black,
               child: TextButton(
                 onPressed: () {
@@ -47,12 +42,12 @@ class _NavigatePageState extends State<NavigatePage> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                              ForgotPass()));
+                              const ForgotPass()));
                 },
-                child: Text('forgotpass'),
+                child: const Text('forgotpass'),
               ),
             ),
-            new Container(
+            Container(
               color: Colors.black,
               child: TextButton(
                 onPressed: () {
@@ -60,12 +55,12 @@ class _NavigatePageState extends State<NavigatePage> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                              DesignCard()));
+                              const DesignCard()));
                 },
-                child: Text('card'),
+                child: const Text('card'),
               ),
             ),
-            new Container(
+            Container(
               color: Colors.black,
               child: TextButton(
                 onPressed: () {
@@ -73,12 +68,12 @@ class _NavigatePageState extends State<NavigatePage> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                              Registedpage2()));
+                              const Registedpage2()));
                 },
-                child: Text('registed'),
+                child: const Text('registed'),
               ),
             ),
-            new Container(
+            Container(
               color: Colors.black,
               child: TextButton(
                 onPressed: () {
@@ -86,9 +81,9 @@ class _NavigatePageState extends State<NavigatePage> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                              KhoSachMainMenu()));
+                              const KhoSachMainMenu()));
                 },
-                child: Text('khosachmainmenu'),
+                child: const Text('khosachmainmenu'),
               ),
             ),
           ],

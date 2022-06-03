@@ -1,8 +1,4 @@
-import 'package:flutter/src/material/input_decorator.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
-import 'package:flutter/src/rendering/box.dart';
 
 class Registedpage2 extends StatefulWidget {
   const Registedpage2({Key? key}) : super(key: key);
@@ -21,23 +17,23 @@ class _RegistedpageState extends State<Registedpage2> {
       resizeToAvoidBottomInset: false,
       body: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 colors: [Color(0xffA9E4E4), Color(0xffFFFAFA)])),
         child: Column(
             children: <Widget>[
               Container(
-                padding: EdgeInsets.only(left: 17, right: 16.64, top: 10),
+                padding: const EdgeInsets.only(left: 17, right: 16.64, top: 10),
                 height: 160,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assest/background_image.png'),
                     fit: BoxFit.fitHeight,
                   ),
                 ),
               ),
-              Text(
+              const Text(
                 "Đăng kí",
                 style: TextStyle(
                     color: Color(0xff001C44),
@@ -51,40 +47,40 @@ class _RegistedpageState extends State<Registedpage2> {
                       )
                     ]),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(bottom: 20),
               ),
-              new Row(
+              Row(
                 children: <Widget>[
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                   Expanded(
                       child: Container(height: 51,
-                    padding: EdgeInsets.only(left: 30),
+                    padding: const EdgeInsets.only(left: 30),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(25),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                               color: Color.fromARGB(90, 0, 0, 0),
                               blurRadius: 20,
                               offset: Offset(0, 10))
                         ]),
-                    child: new TextField(
+                    child: const TextField(
                       decoration: InputDecoration(
                           labelText: "Tên đăng nhập", border: InputBorder.none),
                     ),
                   )),
-                  SizedBox(
+                  const SizedBox(
                     width: 30,
                   ),
-                  new Container(
-                    padding: EdgeInsets.only(left: 5),
+                  Container(
+                    padding: const EdgeInsets.only(left: 5),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(100),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                               color: Color.fromARGB(90, 0, 0, 0),
                               blurRadius: 20,
@@ -113,117 +109,117 @@ class _RegistedpageState extends State<Registedpage2> {
                       },
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 15,
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              new Row(
+              Row(
                 children: <Widget>[
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                   Expanded(
                       child: Container(height: 51,
-                    padding: EdgeInsets.only(left: 30),
+                    padding: const EdgeInsets.only(left: 30),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(25),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                               color: Color.fromARGB(90, 0, 0, 0),
                               blurRadius: 20,
                               offset: Offset(0, 10))
                         ]),
-                    child: new TextField(
+                    child: const TextField(
                       decoration: InputDecoration(
                           labelText: "Ngày sinh", border: InputBorder.none),
                     ),
                   )),
-                  SizedBox(
+                  const SizedBox(
                     width: 15,
                   ),
                   Expanded(
                       child: Container(height: 51,
-                    padding: EdgeInsets.only(left: 30),
+                    padding: const EdgeInsets.only(left: 30),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(25),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                               color: Color.fromARGB(90, 0, 0, 0),
                               blurRadius: 20,
                               offset: Offset(0, 10))
                         ]),
-                    child: new TextField(
+                    child: const TextField(
                       decoration: InputDecoration(
                           labelText: "Số điện thoại", border: InputBorder.none),
                       keyboardType: TextInputType.number,
                     ),
                   )),
-                  SizedBox(
+                  const SizedBox(
                     width: 18,
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              new Row(
+              Row(
                 children: <Widget>[
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                   Expanded(
                       child: Container(height: 51,
-                    padding: EdgeInsets.only(left: 30),
+                    padding: const EdgeInsets.only(left: 30),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(25),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                               color: Color.fromARGB(90, 0, 0, 0),
                               blurRadius: 20,
                               offset: Offset(0, 10))
                         ]),
-                    child: new TextField(
+                    child: const TextField(
                       decoration: InputDecoration(
                           labelText: "Email", border: InputBorder.none),
                     ),
                   )),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              new Row(
+              Row(
                 children: <Widget>[
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                   Expanded(
                       child: Container(height: 51,
-                    padding: EdgeInsets.only(left: 30),
+                    padding: const EdgeInsets.only(left: 30),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(25),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                               color: Color.fromARGB(90, 0, 0, 0),
                               blurRadius: 20,
                               offset: Offset(0, 10))
                         ]),
-                    child: new TextField(
+                    child: TextField(
                       decoration: InputDecoration(
                           labelText: "Mật khẩu",
                           suffixIcon: IconButton(
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.visibility,
                             ),
                             onPressed: () {
@@ -238,36 +234,36 @@ class _RegistedpageState extends State<Registedpage2> {
                       autocorrect: false,
                     ),
                   )),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              new Row(
+              Row(
                 children: <Widget>[
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                   Expanded(
                       child: Container(height: 51,
-                    padding: EdgeInsets.only(left: 30),
+                    padding: const EdgeInsets.only(left: 30),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(25),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                               color: Color.fromARGB(90, 0, 0, 0),
                               blurRadius: 20,
                               offset: Offset(0, 10))
                         ]),
-                    child: new TextField(
+                    child: TextField(
                       decoration: InputDecoration(
                           labelText: "Nhập lại mật khẩu",
                           suffixIcon: IconButton(
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.visibility,
                             ),
                             onPressed: () {
@@ -282,16 +278,16 @@ class _RegistedpageState extends State<Registedpage2> {
                       autocorrect: false,
                     ),
                   )),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               CheckboxListTile(
-                title: Text(
+                title: const Text(
                   "Tôi chấp nhận điều khoản với chính sách của appname",
                   style: TextStyle(
                       color: Color(0xff001C44),
@@ -307,16 +303,16 @@ class _RegistedpageState extends State<Registedpage2> {
                 controlAffinity:
                     ListTileControlAffinity.leading, //  <-- leading Checkbox
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              new Container(
+              Container(
                 height: 55,
-                margin: EdgeInsets.symmetric(horizontal: 100),
+                margin: const EdgeInsets.symmetric(horizontal: 100),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
-                  color: Color(0xff0C5776),
-                  boxShadow: [
+                  color: const Color(0xff0C5776),
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.grey,
                       blurRadius: 8,
@@ -331,7 +327,7 @@ class _RegistedpageState extends State<Registedpage2> {
                         MaterialStateProperty.all<Color>(Colors.blue),
                   ),
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     "Đăng kí",
                     style: TextStyle(
                         color: Colors.white, fontSize: 20, fontFamily: "Lato"),
@@ -373,8 +369,8 @@ Widget DangKiText = const Padding(
 );
 
 Widget buildAppEntryRow() {
-  return new Row(
-    children: <Widget>[
+  return Row(
+    children: const <Widget>[
       Expanded(
         child: TextField(
           decoration:

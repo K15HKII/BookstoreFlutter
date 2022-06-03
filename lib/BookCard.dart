@@ -1,13 +1,5 @@
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/ForgotPassPage.dart';
-import 'RegisterPage.dart';
-import 'ForgotPassPage.dart';
 import 'DesignCardView.dart';
-import 'navigate.dart';
 
 class BookCard extends StatefulWidget {
   BookCard(String Title, String Image, int Amount, String Type, {Key? key})
@@ -26,9 +18,9 @@ class _BookCardState extends State<BookCard> {
   @override
   Widget build(BuildContext context) {
     //--------------------------------------------------------
-    String BookCard_Amount = BookCard_AmountInt.toString();
+    String BookCardAmount = BookCard_AmountInt.toString();
     //--------------------------------------------------------
-    return new Container(
+    return Container(
       height: 100,
       width: 327,
       color: Colors.white,
@@ -43,15 +35,15 @@ class _BookCardState extends State<BookCard> {
                   fit: BoxFit.fitHeight,
                 ),
               )),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
-          Container(
+          SizedBox(
             height: 68,
             width: 150,
             child: Column(
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   height: 6,
                 ),
                 Align(
@@ -59,7 +51,7 @@ class _BookCardState extends State<BookCard> {
                   child: Container(
                     child: Text(
                       BookCard_Title,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 16,
                         fontFamily: "Lato",
                         color: Colors.black,
@@ -68,7 +60,7 @@ class _BookCardState extends State<BookCard> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 4,
                 ),
                 Align(
@@ -76,7 +68,7 @@ class _BookCardState extends State<BookCard> {
                   child: Container(
                     child: Text(
                       BookCard_Type,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 12,
                         fontFamily: "Lato",
                         color: Color(0xff636363),
@@ -88,10 +80,10 @@ class _BookCardState extends State<BookCard> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 35,
           ),
-          new Container(
+          const SizedBox(
             width: 9,
             height: 19,
             child: Text(
@@ -104,15 +96,15 @@ class _BookCardState extends State<BookCard> {
               textAlign: TextAlign.left,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 5,
           ),
-          new Container(
+          SizedBox(
             width: 48,
             height: 19,
             child: Text(
-              BookCard_Amount,
-              style: TextStyle(
+              BookCardAmount,
+              style: const TextStyle(
                 fontSize: 18,
                 fontFamily: "Lato",
                 color: Colors.black,

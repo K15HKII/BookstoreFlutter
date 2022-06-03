@@ -1,14 +1,5 @@
-import 'dart:ui';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/ForgotPassPage.dart';
-import 'RegisterPage.dart';
-import 'ForgotPassPage.dart';
 import 'DesignCardView.dart';
-import 'navigate.dart';
 
 class BookCardAdd extends StatefulWidget {
   BookCardAdd(
@@ -31,24 +22,24 @@ class _BookCardAddState extends State<BookCardAdd> {
   Widget build(BuildContext context) {
     //--------------------------------------------------------
 
-    int BookCardAdd_PriceSumInt =
+    int BookCardAddPriceSumInt =
         BookCardAdd_PriceOriginInt * BookCardAdd_CountInt;
-    String BookCardAdd_PriceSum = BookCardAdd_PriceSumInt.toString();
-    String BookCardAdd_Count = BookCardAdd_CountInt.toString();
+    String BookCardAddPriceSum = BookCardAddPriceSumInt.toString();
+    String BookCardAddCount = BookCardAdd_CountInt.toString();
 
     //--------------------------------------------------------
-    return new Container(
+    return Container(
       width: 327,
       height: 101,
       color: Colors.white,
       child: Row(
         children: <Widget>[
-          new Column(
+          Column(
             children: <Widget>[
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
-              new Container(
+              Container(
                   height: 68,
                   width: 70,
                   decoration: BoxDecoration(
@@ -57,29 +48,29 @@ class _BookCardAddState extends State<BookCardAdd> {
                       fit: BoxFit.fitHeight,
                     ),
                   )),
-              SizedBox(
+              const SizedBox(
                 height: 25,
               )
             ],
           ),
-          new Column(
+          Column(
             children: <Widget>[
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
-              new Row(
+              Row(
                 children: <Widget>[
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: Container(
+                    child: SizedBox(
                       height: 19,
                       width: 203,
                       child: Text(
                         BookCardAdd_Title,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 16,
                           fontFamily: "Lato",
                           color: Colors.black,
@@ -88,22 +79,22 @@ class _BookCardAddState extends State<BookCardAdd> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 9,
                   ),
-                  new Container(
+                  Container(
                       height: 18,
                       width: 14,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(
                             image: AssetImage("assest/trashcanicon.png")),
                       ),
                       child: Align(
                         alignment: Alignment.topRight,
-                        child: new FittedBox(
+                        child: FittedBox(
                           fit: BoxFit.fill,
                           child: Container(
-                            child: TextButton(
+                            child: const TextButton(
                               onPressed: null,
                               child: Text(''),
                             ),
@@ -112,17 +103,17 @@ class _BookCardAddState extends State<BookCardAdd> {
                       ))
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 4,
               ),
               Align(
                 alignment: Alignment.centerLeft,
-                child: Container(
+                child: SizedBox(
                   width: 215,
                   height: 14,
                   child: Text(
                     BookCardAdd_Type,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 12,
                       fontFamily: "Lato",
                       color: Color(0xff636363),
@@ -131,18 +122,18 @@ class _BookCardAddState extends State<BookCardAdd> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 12.5,
               ),
-              new Container(
+              SizedBox(
                 height: 28,
                 width: 240,
                 child: Row(
                   children: <Widget>[
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
-                    new Container(
+                    SizedBox(
                       height: 28,
                       width: 90,
                       child: Row(
@@ -150,8 +141,8 @@ class _BookCardAddState extends State<BookCardAdd> {
                           Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
-                              BookCardAdd_PriceSum,
-                              style: TextStyle(
+                              BookCardAddPriceSum,
+                              style: const TextStyle(
                                 fontSize: 16,
                                 fontFamily: "Lato",
                                 color: Colors.red,
@@ -159,7 +150,7 @@ class _BookCardAddState extends State<BookCardAdd> {
                               textAlign: TextAlign.left,
                             ),
                           ),
-                          Align(
+                          const Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
                               " đ",
@@ -174,44 +165,44 @@ class _BookCardAddState extends State<BookCardAdd> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 40,
                     ),
-                    new Container(
+                    Container(
                       height: 28,
                       width: 28,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage('assest/minusbutton.png'))),
                       child: TextButton(
-                          child: Text(''),
+                          child: const Text(''),
                           onPressed: () {
                             if (BookCardAdd_CountInt > 0) {
                               BookCardAdd_CountInt -= 1;
-                              BookCardAdd_PriceSumInt =
+                              BookCardAddPriceSumInt =
                                   BookCardAdd_PriceOriginInt *
                                       BookCardAdd_CountInt;
                               setState(() {
-                                BookCardAdd_Count =
+                                BookCardAddCount =
                                     BookCardAdd_CountInt.toString();
-                                BookCardAdd_PriceSum =
-                                    BookCardAdd_PriceSumInt.toString();
+                                BookCardAddPriceSum =
+                                    BookCardAddPriceSumInt.toString();
                               });
                             }
                             if (BookCardAdd_CountInt == 0) {}
                           }),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Align(
                         alignment: Alignment.centerLeft,
-                        child: Container(
+                        child: SizedBox(
                             width: 22,
                             child: Center(
                               child: Text(
-                                BookCardAdd_Count,
-                                style: TextStyle(
+                                BookCardAddCount,
+                                style: const TextStyle(
                                   fontSize: 12,
                                   fontFamily: "Lato",
                                   color: Colors.black,
@@ -219,27 +210,27 @@ class _BookCardAddState extends State<BookCardAdd> {
                                 textAlign: TextAlign.left,
                               ),
                             ))),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
-                    new Container(
+                    Container(
                       height: 28,
                       width: 28,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage('assest/plusbutton.png'))),
                       child: TextButton(
-                          child: Text(''),
+                          child: const Text(''),
                           onPressed: () {
                             BookCardAdd_CountInt += 1;
-                            BookCardAdd_PriceSumInt =
+                            BookCardAddPriceSumInt =
                                 BookCardAdd_PriceOriginInt *
                                     BookCardAdd_CountInt;
                             setState(() {
-                              BookCardAdd_Count =
+                              BookCardAddCount =
                                   BookCardAdd_CountInt.toString();
-                              BookCardAdd_PriceSum =
-                                  BookCardAdd_PriceSumInt.toString();
+                              BookCardAddPriceSum =
+                                  BookCardAddPriceSumInt.toString();
                             });
                           }),
                     ),

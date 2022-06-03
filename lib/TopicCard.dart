@@ -1,13 +1,5 @@
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/ForgotPassPage.dart';
-import 'RegisterPage.dart';
-import 'ForgotPassPage.dart';
 import 'DesignCardView.dart';
-import 'navigate.dart';
 
 class TopicCard extends StatefulWidget {
   TopicCard(String Topic, String Image, {Key? key}) : super(key: key) {
@@ -22,7 +14,7 @@ class TopicCard extends StatefulWidget {
 class _TopicCardState extends State<TopicCard> {
   @override
   Widget build(BuildContext context) {
-    return new SizedBox(
+    return SizedBox(
       height: 106,
       width: 70,
       child: DecoratedBox(
@@ -32,7 +24,7 @@ class _TopicCardState extends State<TopicCard> {
         ),
         child: Column(
           children: <Widget>[
-            Padding(padding: EdgeInsets.only(left: 8, right: 8)),
+            const Padding(padding: EdgeInsets.only(left: 8, right: 8)),
             Container(
               height: 70,
               width: 54,
@@ -43,13 +35,13 @@ class _TopicCardState extends State<TopicCard> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 6,
             ),
             Center(
               child: Text(
                 TopicCard_Topic,
-                style: TextStyle(fontSize: 12, fontFamily: "Lato"),
+                style: const TextStyle(fontSize: 12, fontFamily: "Lato"),
               ),
             )
           ],

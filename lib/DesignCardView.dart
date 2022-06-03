@@ -1,17 +1,4 @@
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/BookCardAdd.dart';
-import 'PriceCardWithStar.dart';
-import 'PriceCard.dart';
-import 'TopicCard.dart';
-import 'BigCardInfo.dart';
-import 'BookCard.dart';
-import 'BookCardWithPrize.dart';
-import 'BookCardWithTotalPrize.dart';
-import 'SearchPanel.dart';
 
 class DesignCard extends StatefulWidget {
   const DesignCard({Key? key}) : super(key: key);
@@ -87,7 +74,7 @@ class _DesignCardState extends State<DesignCard> {
     return Scaffold(
         backgroundColor: Colors.black,
         body: Column(
-          children: <Widget>[],
+          children: const <Widget>[],
         ));
   }
 }

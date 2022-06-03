@@ -1,14 +1,4 @@
-import 'dart:ui';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/ForgotPassPage.dart';
-import 'RegisterPage.dart';
-import 'ForgotPassPage.dart';
-import 'DesignCardView.dart';
-import 'navigate.dart';
 
 class SearchPanel extends StatefulWidget {
   const SearchPanel({Key? key}) : super(key: key);
@@ -34,18 +24,18 @@ class _SearchPanelState extends State<SearchPanel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: new Container(
+      body: Container(
         height: 530,
         width: 375,
-        decoration: BoxDecoration(color: Color(0xff98BDC7)),
+        decoration: const BoxDecoration(color: Color(0xff98BDC7)),
         child: Column(
           children: <Widget>[
-            SizedBox(
+            const SizedBox(
               height: 28,
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(left: 24, right: 281),
-              child: Container(
+              child: SizedBox(
                 height: 24,
                 width: 70,
                 child: Text(
@@ -54,11 +44,11 @@ class _SearchPanelState extends State<SearchPanel> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 24, right: 24),
+              padding: const EdgeInsets.only(left: 24, right: 24),
               child: Container(
                 height: 144,
                 width: 327,
@@ -71,11 +61,11 @@ class _SearchPanelState extends State<SearchPanel> {
                     Container(
                       height: 48,
                       width: 327,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Row(
                         children: <Widget>[
                           Padding(
-                              padding: EdgeInsets.only(
+                              padding: const EdgeInsets.only(
                                 left: 18,
                                 top: 14,
                                 bottom: 14,
@@ -87,7 +77,7 @@ class _SearchPanelState extends State<SearchPanel> {
                                     image: DecorationImage(
                                         image: AssetImage(checkbox1))),
                                 child: TextButton(
-                                    child: Text(""),
+                                    child: const Text(""),
                                     onPressed: () {
                                       SearchPanel_Checkbox1 += 1;
                                       SearchPanel_Checkbox2 = 0;
@@ -109,10 +99,10 @@ class _SearchPanelState extends State<SearchPanel> {
                                       }
                                     }),
                               )),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
-                          Container(
+                          const SizedBox(
                             height: 19,
                             width: 180,
                             child: Text(
@@ -131,7 +121,7 @@ class _SearchPanelState extends State<SearchPanel> {
                       child: Row(
                         children: <Widget>[
                           Padding(
-                              padding: EdgeInsets.only(
+                              padding: const EdgeInsets.only(
                                 left: 18,
                                 top: 14,
                                 bottom: 14,
@@ -143,7 +133,7 @@ class _SearchPanelState extends State<SearchPanel> {
                                     image: DecorationImage(
                                         image: AssetImage(checkbox2))),
                                 child: TextButton(
-                                    child: Text(""),
+                                    child: const Text(""),
                                     onPressed: () {
                                       SearchPanel_Checkbox2 += 1;
                                       SearchPanel_Checkbox1 = 0;
@@ -165,10 +155,10 @@ class _SearchPanelState extends State<SearchPanel> {
                                       }
                                     }),
                               )),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
-                          Container(
+                          const SizedBox(
                             height: 19,
                             width: 180,
                             child: Text(
@@ -180,13 +170,13 @@ class _SearchPanelState extends State<SearchPanel> {
                         ],
                       ),
                     ),
-                    Container(
+                    SizedBox(
                       height: 48,
                       width: 327,
                       child: Row(
                         children: <Widget>[
                           Padding(
-                              padding: EdgeInsets.only(
+                              padding: const EdgeInsets.only(
                                 left: 18,
                                 top: 14,
                                 bottom: 14,
@@ -198,7 +188,7 @@ class _SearchPanelState extends State<SearchPanel> {
                                     image: DecorationImage(
                                         image: AssetImage(checkbox3))),
                                 child: TextButton(
-                                    child: Text(""),
+                                    child: const Text(""),
                                     onPressed: () {
                                       SearchPanel_Checkbox3 += 1;
                                       SearchPanel_Checkbox1 = 0;
@@ -220,10 +210,10 @@ class _SearchPanelState extends State<SearchPanel> {
                                       }
                                     }),
                               )),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
-                          Container(
+                          const SizedBox(
                             height: 19,
                             width: 180,
                             child: Text(
@@ -239,14 +229,14 @@ class _SearchPanelState extends State<SearchPanel> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 32,
             ),
-            new Row(
+            Row(
               children: <Widget>[
-                Padding(
+                const Padding(
                   padding: EdgeInsets.only(left: 24),
-                  child: Container(
+                  child: SizedBox(
                     width: 153,
                     height: 24,
                     child: Text(
@@ -255,25 +245,25 @@ class _SearchPanelState extends State<SearchPanel> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 65,
                 ),
-                Container(
+                SizedBox(
                   height: 14,
                   width: 120,
                   child: Row(
                     children: <Widget>[
                       Text(
                         a,
-                        style: TextStyle(fontFamily: "Lato", fontSize: 13),
+                        style: const TextStyle(fontFamily: "Lato", fontSize: 13),
                       ),
-                      Text(
+                      const Text(
                         " - ",
                         style: TextStyle(fontFamily: "Lato", fontSize: 13),
                       ),
                       Text(
                         b,
-                        style: TextStyle(fontFamily: "Lato", fontSize: 13),
+                        style: const TextStyle(fontFamily: "Lato", fontSize: 13),
                       ),
                     ],
                   ),
@@ -281,11 +271,11 @@ class _SearchPanelState extends State<SearchPanel> {
               ],
             ),
             Padding(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 left: 25,
                 right: 28,
               ),
-              child: Container(
+              child: SizedBox(
                 width: 328,
                 child: RangeSlider(
                   values: _currentRangeValues,
@@ -307,14 +297,14 @@ class _SearchPanelState extends State<SearchPanel> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 36,
             ),
-            new Row(
-              children: <Widget>[
+            Row(
+              children: const <Widget>[
                 Padding(
                   padding: EdgeInsets.only(left: 24),
-                  child: Container(
+                  child: SizedBox(
                     width: 153,
                     height: 24,
                     child: Text(
@@ -325,70 +315,70 @@ class _SearchPanelState extends State<SearchPanel> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 24, right: 101),
-              child: new Container(
+              padding: const EdgeInsets.only(left: 24, right: 101),
+              child: SizedBox(
                 height: 24,
                 width: 250,
                 child: Row(
                   children: <Widget>[
                     Padding(
-                      padding: EdgeInsets.only(left: 3.44),
+                      padding: const EdgeInsets.only(left: 3.44),
                       child: Container(
                         height: 16.36,
                         width: 17.11,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("assest/starfull.png"))),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
                     Container(
                       height: 16.36,
                       width: 17.11,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("assest/starfull.png"))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
                     Container(
                       height: 16.36,
                       width: 17.11,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("assest/starfull.png"))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
                     Container(
                       height: 16.36,
                       width: 17.11,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("assest/starfull.png"))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
                     Container(
                       height: 16.36,
                       width: 17.11,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("assest/starfull.png"))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 57.44,
                     ),
-                    Text(
+                    const Text(
                       "5 sao",
                       style: TextStyle(fontFamily: "Lato", fontSize: 12),
                     ),
@@ -396,63 +386,63 @@ class _SearchPanelState extends State<SearchPanel> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 3,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 24, right: 101),
-              child: new Container(
+              padding: const EdgeInsets.only(left: 24, right: 101),
+              child: SizedBox(
                 height: 24,
                 width: 250,
                 child: Row(
                   children: <Widget>[
                     Padding(
-                      padding: EdgeInsets.only(left: 3.44),
+                      padding: const EdgeInsets.only(left: 3.44),
                       child: Container(
                         height: 16.36,
                         width: 17.11,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("assest/starfull.png"))),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
                     Container(
                       height: 16.36,
                       width: 17.11,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("assest/starfull.png"))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
                     Container(
                       height: 16.36,
                       width: 17.11,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("assest/starfull.png"))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
                     Container(
                       height: 16.36,
                       width: 17.11,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("assest/starfull.png"))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 50.44,
                     ),
-                    Text(
+                    const Text(
                       "4 sao trở lên",
                       style: TextStyle(fontFamily: "Lato", fontSize: 12),
                     ),
@@ -460,59 +450,59 @@ class _SearchPanelState extends State<SearchPanel> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 3,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 24, right: 101),
-              child: new Container(
+              padding: const EdgeInsets.only(left: 24, right: 101),
+              child: SizedBox(
                 height: 24,
                 width: 250,
                 child: Row(
                   children: <Widget>[
                     Padding(
-                      padding: EdgeInsets.only(left: 3.44),
+                      padding: const EdgeInsets.only(left: 3.44),
                       child: Container(
                         height: 16.36,
                         width: 17.11,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("assest/starfull.png"))),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
                     Container(
                       height: 16.36,
                       width: 17.11,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("assest/starfull.png"))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
                     Container(
                       height: 16.36,
                       width: 17.11,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("assest/starfull.png"))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 17.11,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 50.44,
                     ),
-                    Text(
+                    const Text(
                       "3 sao trở lên",
                       style: TextStyle(fontFamily: "Lato", fontSize: 12),
                     ),
@@ -520,55 +510,55 @@ class _SearchPanelState extends State<SearchPanel> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 3,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 24, right: 101),
-              child: new Container(
+              padding: const EdgeInsets.only(left: 24, right: 101),
+              child: SizedBox(
                 height: 24,
                 width: 250,
                 child: Row(
                   children: <Widget>[
                     Padding(
-                      padding: EdgeInsets.only(left: 3.44),
+                      padding: const EdgeInsets.only(left: 3.44),
                       child: Container(
                         height: 16.36,
                         width: 17.11,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage("assest/starfull.png"))),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
                     Container(
                       height: 16.36,
                       width: 17.11,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("assest/starfull.png"))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 17.11,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 17.11,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 14.89,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 50.44,
                     ),
-                    Text(
+                    const Text(
                       "2 sao trở lên",
                       style: TextStyle(fontFamily: "Lato", fontSize: 12),
                     ),

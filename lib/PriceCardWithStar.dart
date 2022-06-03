@@ -1,13 +1,5 @@
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/ForgotPassPage.dart';
-import 'RegisterPage.dart';
-import 'ForgotPassPage.dart';
 import 'DesignCardView.dart';
-import 'navigate.dart';
 
 class DesignCardWithStar extends StatefulWidget {
   DesignCardWithStar(String Title, String Image, int Price, double Rate,
@@ -29,8 +21,8 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
   Widget build(BuildContext context) {
     //------------------------------------------------------------------------
 
-    String PriceCardWithStar_Price = PriceCardWithStar_PriceInt.toString();
-    String PriceCardWithStar_Star = PriceCardWithStar_StarInt.toString();
+    String PriceCardWithStarPrice = PriceCardWithStar_PriceInt.toString();
+    String PriceCardWithStarStar = PriceCardWithStar_StarInt.toString();
     String starfull = "assest/starfull.png";
     String starhalf = "assest/starhalf.png";
     String starempty = "assest/starempty.png";
@@ -45,7 +37,7 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
       starpick = starempty;
     }
     //------------------------------------------------------------------------
-    return new SizedBox(
+    return SizedBox(
       height: 260,
       width: 172,
       child: DecoratedBox(
@@ -65,45 +57,45 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Row(
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   width: 12,
                 ),
-                new Container(
-                  decoration: BoxDecoration(),
+                Container(
+                  decoration: const BoxDecoration(),
                   height: 61,
                   width: 124,
                   child: Column(
                     children: <Widget>[
-                      new Container(
+                      SizedBox(
                         width: 124,
                         height: 36,
                         child: Text(
                           PriceCardWithStar_Title,
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 15,
                               color: Colors.black,
                               fontFamily: "Lato"),
                           textAlign: TextAlign.left,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 6,
                       ),
-                      new Row(
+                      Row(
                         children: <Widget>[
                           Text(
-                            PriceCardWithStar_Price,
-                            style: TextStyle(
+                            PriceCardWithStarPrice,
+                            style: const TextStyle(
                                 fontSize: 16,
                                 fontFamily: "Lato",
                                 color: Colors.red),
                           ),
-                          new Container(
+                          const SizedBox(
                             width: 10,
                             height: 19,
                             child: Text(
@@ -119,7 +111,7 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
                     ],
                   ),
                 ),
-                new Container(
+                Container(
                   height: 21,
                   width: 18,
                   decoration: BoxDecoration(
@@ -129,7 +121,7 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
                   ),
                   child: Container(
                       child: TextButton(
-                          child: Text(""),
+                          child: const Text(""),
                           onPressed: () {
                             PriceCardWithStar_HeartInt += 1;
                             if (PriceCardWithStar_HeartInt % 2 == 1) {
@@ -146,29 +138,29 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 6,
             ),
-            new Row(
+            Row(
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   width: 12,
                 ),
-                new Container(
+                Container(
                   height: 28,
                   width: 48,
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black),
-                    borderRadius: BorderRadius.all(Radius.circular(
+                    borderRadius: const BorderRadius.all(Radius.circular(
                             5.0) //                 <--- border radius here
                         ),
                   ),
                   child: Row(
                     children: <Widget>[
-                      SizedBox(
+                      const SizedBox(
                         width: 5.44,
                       ),
-                      new Container(
+                      Container(
                         height: 16.36,
                         width: 17.11,
                         decoration: BoxDecoration(
@@ -178,15 +170,15 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5.44,
                       ),
-                      new Container(
+                      SizedBox(
                         width: 17,
                         height: 13,
                         child: Text(
-                          PriceCardWithStar_Star,
-                          style: TextStyle(
+                          PriceCardWithStarStar,
+                          style: const TextStyle(
                               color: Colors.black,
                               fontFamily: "Lato",
                               fontSize: 12),

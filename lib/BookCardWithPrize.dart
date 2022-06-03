@@ -1,13 +1,5 @@
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/ForgotPassPage.dart';
-import 'RegisterPage.dart';
-import 'ForgotPassPage.dart';
 import 'DesignCardView.dart';
-import 'navigate.dart';
 
 class BookCardWithPrize extends StatefulWidget {
   BookCardWithPrize(
@@ -30,10 +22,10 @@ class _BookCardWithPrizeState extends State<BookCardWithPrize> {
   Widget build(BuildContext context) {
     //-----------------------------------------------------------------------
 
-    String BookCardWithPrize_Amount = BookCardWithPrize_AmountInt.toString();
-    String BookCardWithPrize_Price = BookCardWithPrize_PriceInt.toString();
+    String BookCardWithPrizeAmount = BookCardWithPrize_AmountInt.toString();
+    String BookCardWithPrizePrice = BookCardWithPrize_PriceInt.toString();
     //-----------------------------------------------------------------------
-    return new Container(
+    return Container(
       height: 100,
       width: 327,
       color: Colors.white,
@@ -48,15 +40,15 @@ class _BookCardWithPrizeState extends State<BookCardWithPrize> {
                   fit: BoxFit.fitHeight,
                 ),
               )),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
-          Container(
+          SizedBox(
             height: 68,
             width: 150,
             child: Column(
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   height: 6,
                 ),
                 Align(
@@ -64,7 +56,7 @@ class _BookCardWithPrizeState extends State<BookCardWithPrize> {
                   child: Container(
                     child: Text(
                       BookCardWithPrize_Title,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 16,
                         fontFamily: "Lato",
                         color: Colors.black,
@@ -73,7 +65,7 @@ class _BookCardWithPrizeState extends State<BookCardWithPrize> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 4,
                 ),
                 Align(
@@ -81,7 +73,7 @@ class _BookCardWithPrizeState extends State<BookCardWithPrize> {
                   child: Container(
                     child: Text(
                       BookCardWithPrize_Type,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 12,
                         fontFamily: "Lato",
                         color: Color(0xff636363),
@@ -93,17 +85,17 @@ class _BookCardWithPrizeState extends State<BookCardWithPrize> {
               ],
             ),
           ),
-          new Column(
+          Column(
             children: <Widget>[
-              SizedBox(
+              const SizedBox(
                 height: 25,
               ),
-              new Row(
+              Row(
                 children: <Widget>[
-                  SizedBox(
+                  const SizedBox(
                     width: 35,
                   ),
-                  new Container(
+                  const SizedBox(
                     width: 9,
                     height: 19,
                     child: Text(
@@ -116,15 +108,15 @@ class _BookCardWithPrizeState extends State<BookCardWithPrize> {
                       textAlign: TextAlign.left,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
-                  new Container(
+                  SizedBox(
                     width: 48,
                     height: 19,
                     child: Text(
-                      BookCardWithPrize_Amount,
-                      style: TextStyle(
+                      BookCardWithPrizeAmount,
+                      style: const TextStyle(
                         fontSize: 18,
                         fontFamily: "Lato",
                         color: Colors.black,
@@ -134,20 +126,20 @@ class _BookCardWithPrizeState extends State<BookCardWithPrize> {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 7,
               ),
               Row(
                 children: <Widget>[
                   Text(
-                    BookCardWithPrize_Price,
-                    style: TextStyle(
+                    BookCardWithPrizePrice,
+                    style: const TextStyle(
                       fontSize: 11,
                       fontFamily: "Lato",
                       color: Color(0xff001c44),
                     ),
                   ),
-                  Text(
+                  const Text(
                     " đ",
                     style: TextStyle(
                       fontSize: 11,

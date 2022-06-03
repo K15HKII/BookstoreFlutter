@@ -1,18 +1,9 @@
-import 'dart:ui';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/decoration_image.dart';
-import 'package:flutter/src/material/text_field.dart';
-import 'package:huy12345/ForgotPassPage.dart';
-import 'RegisterPage.dart';
-import 'ForgotPassPage.dart';
-import 'DesignCardView.dart';
-import 'navigate.dart';
+
 import 'package:buttons_tabbar/buttons_tabbar.dart';
+import 'package:flutter/material.dart';
+
 import 'PriceCardWithStar.dart';
 import 'SearchPanel.dart';
-import 'package:flutter/cupertino.dart';
 
 class KhoSachMainMenu extends StatefulWidget {
   const KhoSachMainMenu({Key? key}) : super(key: key);
@@ -25,23 +16,23 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffBCFEFE),
+      backgroundColor: const Color(0xffBCFEFE),
       body: Column(
         children: <Widget>[
-          new Container(
+          SizedBox(
             width: MediaQuery.of(context).size.width,
             height: 99,
-            child: new Row(
+            child: Row(
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.only(left: 24),
+                  padding: const EdgeInsets.only(left: 24),
                   child: Container(
                       width: 241,
                       height: 51,
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(25),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                                 color: Color.fromARGB(90, 0, 0, 0),
                                 blurRadius: 20,
@@ -49,31 +40,31 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                           ]),
                       child: Row(
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             width: 15,
                           ),
-                          IconButton(
-                              icon: new Icon(Icons.search), onPressed: null),
-                          new SizedBox(
+                          const IconButton(
+                              icon: Icon(Icons.search), onPressed: null),
+                          const SizedBox(
                             width: 140,
                             height: 51,
-                            child: new TextField(
-                              decoration: new InputDecoration(
+                            child: TextField(
+                              decoration: InputDecoration(
                                 labelText: "Tìm kiếm",
                                 border: InputBorder.none,
                               ),
                             ),
                           ),
-                          new Container(
+                          Container(
                               height: 18,
                               width: 14,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 image: DecorationImage(
                                     image: AssetImage("assest/filtericon.png")),
                               ),
                               child: Align(
                                 alignment: Alignment.topRight,
-                                child: new FittedBox(
+                                child: FittedBox(
                                   fit: BoxFit.fill,
                                   child: Container(
                                     child: TextButton(
@@ -84,10 +75,10 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                                             builder: (
                                               BuildContext context,
                                             ) {
-                                              return SearchPanel();
+                                              return const SearchPanel();
                                             });
                                       },
-                                      child: Text(''),
+                                      child: const Text(''),
                                     ),
                                   ),
                                 ),
@@ -95,106 +86,106 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                         ],
                       )),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 17.88,
                 ),
-                new Container(
+                Container(
                   height: 26,
                   width: 25,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage("assest/bellicon.png"),
                     ),
                   ),
                   child: Container(
-                      child: TextButton(child: Text(""), onPressed: () {})),
+                      child: TextButton(child: const Text(""), onPressed: () {})),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 19.22,
                 ),
-                new Container(
+                Container(
                   height: 26.67,
                   width: 26.68,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage("assest/shoppingcarticon.png"),
                     ),
                   ),
                   child: Container(
-                      child: TextButton(child: Text(""), onPressed: () {})),
+                      child: TextButton(child: const Text(""), onPressed: () {})),
                 ),
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 11,
           ),
           Padding(
-            padding: EdgeInsets.only(left: 23.5),
-            child: Container(
+            padding: const EdgeInsets.only(left: 23.5),
+            child: SizedBox(
               width: MediaQuery.of(context).size.width,
               height: 37,
-              child: Text(
+              child: const Text(
                 "Kho sách",
                 style: TextStyle(fontFamily: "Lato", fontSize: 31),
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Container(
+          SizedBox(
               height: 514,
               child: DefaultTabController(
                 length: 5,
                 child: Column(
                   children: <Widget>[
                     ButtonsTabBar(
-                        backgroundColor: Color(0xff001C44),
-                        unselectedBackgroundColor: Color(0xffCDD6D9),
-                        labelStyle: TextStyle(
+                        backgroundColor: const Color(0xff001C44),
+                        unselectedBackgroundColor: const Color(0xffCDD6D9),
+                        labelStyle: const TextStyle(
                             color: Colors.white, fontWeight: FontWeight.bold),
-                        unselectedLabelStyle: TextStyle(
+                        unselectedLabelStyle: const TextStyle(
                             color: Colors.grey, fontWeight: FontWeight.bold),
                         radius: 100,
-                        tabs: [
+                        tabs: const [
                           Tab(
-                            child: new Container(
+                            child: SizedBox(
                               width: 56,
                               height: 36,
                               child: Icon(Icons.home),
                             ),
                           ),
                           Tab(
-                              child: new Container(
+                              child: SizedBox(
                                   width: 69,
                                   child: Text(
                                     "Tất cả",
                                     textAlign: TextAlign.center,
                                   ))),
                           Tab(
-                              child: new Container(
+                              child: SizedBox(
                                   width: 87,
                                   child: Text(
                                     "Phổ biến",
                                     textAlign: TextAlign.center,
                                   ))),
                           Tab(
-                              child: new Container(
+                              child: SizedBox(
                                   width: 83,
                                   child: Text(
                                     "Gần đây",
                                     textAlign: TextAlign.center,
                                   ))),
                           Tab(
-                              child: new Container(
+                              child: SizedBox(
                                   width: 118,
                                   child: Text(
                                     "Dành cho tôi",
                                     textAlign: TextAlign.center,
                                   ))),
                         ]),
-                    SizedBox(
+                    const SizedBox(
                       height: 25,
                     ),
                     SizedBox(
@@ -202,7 +193,7 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                       width: 350,
                       child: TabBarView(
                         children: [
-                          new Container(
+                          Container(
                             decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(10)),
@@ -211,145 +202,145 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                               removeTop: true,
                               child: ListView(
                                 children: [
-                                  new Container(
-                                    padding: EdgeInsets.only(
+                                  Container(
+                                    padding: const EdgeInsets.only(
                                         left: 24, top: 16, bottom: 16),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                         border: Border(
                                             bottom: BorderSide(
                                                 width: 1,
                                                 color: Color(0xffBCFEFE)))),
                                     width: 350,
                                     height: 51,
-                                    child: Text(
+                                    child: const Text(
                                       "Văn học",
                                       style: TextStyle(
                                           fontSize: 16, fontFamily: "Lato"),
                                     ),
                                   ),
-                                  new Container(
-                                    padding: EdgeInsets.only(
+                                  Container(
+                                    padding: const EdgeInsets.only(
                                         left: 24, top: 16, bottom: 16),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                         border: Border(
                                             bottom: BorderSide(
                                                 width: 1,
                                                 color: Color(0xffBCFEFE)))),
                                     width: 350,
                                     height: 51,
-                                    child: Text(
+                                    child: const Text(
                                       "Văn học",
                                       style: TextStyle(
                                           fontSize: 16, fontFamily: "Lato"),
                                     ),
                                   ),
-                                  new Container(
-                                    padding: EdgeInsets.only(
+                                  Container(
+                                    padding: const EdgeInsets.only(
                                         left: 24, top: 16, bottom: 16),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                         border: Border(
                                             bottom: BorderSide(
                                                 width: 1,
                                                 color: Color(0xffBCFEFE)))),
                                     width: 350,
                                     height: 51,
-                                    child: Text(
+                                    child: const Text(
                                       "Văn học",
                                       style: TextStyle(
                                           fontSize: 16, fontFamily: "Lato"),
                                     ),
                                   ),
-                                  new Container(
-                                    padding: EdgeInsets.only(
+                                  Container(
+                                    padding: const EdgeInsets.only(
                                         left: 24, top: 16, bottom: 16),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                         border: Border(
                                             bottom: BorderSide(
                                                 width: 1,
                                                 color: Color(0xffBCFEFE)))),
                                     width: 350,
                                     height: 51,
-                                    child: Text(
+                                    child: const Text(
                                       "Văn học",
                                       style: TextStyle(
                                           fontSize: 16, fontFamily: "Lato"),
                                     ),
                                   ),
-                                  new Container(
-                                    padding: EdgeInsets.only(
+                                  Container(
+                                    padding: const EdgeInsets.only(
                                         left: 24, top: 16, bottom: 16),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                         border: Border(
                                             bottom: BorderSide(
                                                 width: 1,
                                                 color: Color(0xffBCFEFE)))),
                                     width: 350,
                                     height: 51,
-                                    child: Text(
+                                    child: const Text(
                                       "Văn học",
                                       style: TextStyle(
                                           fontSize: 16, fontFamily: "Lato"),
                                     ),
                                   ),
-                                  new Container(
-                                    padding: EdgeInsets.only(
+                                  Container(
+                                    padding: const EdgeInsets.only(
                                         left: 24, top: 16, bottom: 16),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                         border: Border(
                                             bottom: BorderSide(
                                                 width: 1,
                                                 color: Color(0xffBCFEFE)))),
                                     width: 350,
                                     height: 51,
-                                    child: Text(
+                                    child: const Text(
                                       "Văn học",
                                       style: TextStyle(
                                           fontSize: 16, fontFamily: "Lato"),
                                     ),
                                   ),
-                                  new Container(
-                                    padding: EdgeInsets.only(
+                                  Container(
+                                    padding: const EdgeInsets.only(
                                         left: 24, top: 16, bottom: 16),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                         border: Border(
                                             bottom: BorderSide(
                                                 width: 1,
                                                 color: Color(0xffBCFEFE)))),
                                     width: 350,
                                     height: 51,
-                                    child: Text(
+                                    child: const Text(
                                       "Văn học",
                                       style: TextStyle(
                                           fontSize: 16, fontFamily: "Lato"),
                                     ),
                                   ),
-                                  new Container(
-                                    padding: EdgeInsets.only(
+                                  Container(
+                                    padding: const EdgeInsets.only(
                                         left: 24, top: 16, bottom: 16),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                         border: Border(
                                             bottom: BorderSide(
                                                 width: 1,
                                                 color: Color(0xffBCFEFE)))),
                                     width: 350,
                                     height: 51,
-                                    child: Text(
+                                    child: const Text(
                                       "Văn học",
                                       style: TextStyle(
                                           fontSize: 16, fontFamily: "Lato"),
                                     ),
                                   ),
-                                  new Container(
-                                    padding: EdgeInsets.only(
+                                  Container(
+                                    padding: const EdgeInsets.only(
                                         left: 24, top: 16, bottom: 16),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                         border: Border(
                                             bottom: BorderSide(
                                                 width: 1,
                                                 color: Color(0xffBCFEFE)))),
                                     width: 350,
                                     height: 51,
-                                    child: Text(
+                                    child: const Text(
                                       "Văn học",
                                       style: TextStyle(
                                           fontSize: 16, fontFamily: "Lato"),
@@ -369,37 +360,37 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                             crossAxisCount: 2,
                             childAspectRatio: 2 / 3,
                             children: <Widget>[
-                              Container(
+                              SizedBox(
                                 height: 260,
                                 width: 172,
                                 child: DesignCardWithStar("Con mèo đi hia",
                                     "assest/testbg.jpg", 696969, 4.9),
                               ),
-                              Container(
+                              SizedBox(
                                 height: 260,
                                 width: 172,
                                 child: DesignCardWithStar("Con mèo đi hia",
                                     "assest/testbg.jpg", 696969, 4.9),
                               ),
-                              Container(
+                              SizedBox(
                                 height: 260,
                                 width: 172,
                                 child: DesignCardWithStar("Con mèo đi hia",
                                     "assest/testbg.jpg", 696969, 4.9),
                               ),
-                              Container(
+                              SizedBox(
                                 height: 260,
                                 width: 172,
                                 child: DesignCardWithStar("Con mèo đi hia",
                                     "assest/testbg.jpg", 696969, 4.9),
                               ),
-                              Container(
+                              SizedBox(
                                 height: 260,
                                 width: 172,
                                 child: DesignCardWithStar("Con mèo đi hia",
                                     "assest/testbg.jpg", 696969, 4.9),
                               ),
-                              Container(
+                              SizedBox(
                                 height: 260,
                                 width: 172,
                                 child: DesignCardWithStar("AAAAAAAAAa",
@@ -407,9 +398,9 @@ class _KhoSachMainMenuState extends State<KhoSachMainMenu> {
                               ),
                             ],
                           ),
-                          Icon(Icons.directions_bike),
-                          Icon(Icons.directions_car),
-                          Icon(Icons.directions_transit),
+                          const Icon(Icons.directions_bike),
+                          const Icon(Icons.directions_car),
+                          const Icon(Icons.directions_transit),
                         ],
                       ),
                     )
