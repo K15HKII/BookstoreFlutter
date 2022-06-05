@@ -1,9 +1,7 @@
-
-import 'package:buttons_tabbar/buttons_tabbar.dart';
 import 'package:flutter/material.dart';
-
-import 'PriceCardWithStar.dart';
-import 'SearchPanel.dart';
+import 'package:buttons_tabbar/buttons_tabbar.dart';
+import 'price_card_big.dart';
+import 'search_bar.dart';
 
 class KhoSachMainMenu extends StatefulWidget {
   const KhoSachMainMenu({Key? key}) : super(key: key);

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'RegisterPage.dart';
+import 'register_page.dart';
 
 
 class ForgotPass extends StatefulWidget {

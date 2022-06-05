@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:huy12345/ForgotPassPage.dart';
-import 'RegisterPage.dart';
-import 'ForgotPassPage.dart';
+import 'package:bookstore_flutter/ui/components/forgot_password_page.dart';
+import 'ui/components/register_page.dart';
+import 'ui/components/forgot_password_page.dart';
 import 'navigate.dart';
 
 void main() => runApp(MaterialApp(
