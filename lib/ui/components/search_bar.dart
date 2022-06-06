@@ -15,9 +15,9 @@ String b = bInt.toString();
 int SearchPanel_Checkbox1 = 0;
 int SearchPanel_Checkbox2 = 0;
 int SearchPanel_Checkbox3 = 0;
-String checkbox1 = "assest/uncheckcircle.png";
-String checkbox2 = "assest/uncheckcircle.png";
-String checkbox3 = "assest/uncheckcircle.png";
+String checkbox1 = "assets/uncheckcircle.png";
+String checkbox2 = "assets/uncheckcircle.png";
+String checkbox3 = "assets/uncheckcircle.png";
 
 //a la bien chi diem dau cua slider, b la bien chi diem cuoi cua slider
 class _SearchPanelState extends State<SearchPanel> {
@@ -84,17 +84,17 @@ class _SearchPanelState extends State<SearchPanel> {
                                       SearchPanel_Checkbox3 = 0;
                                       if (SearchPanel_Checkbox1 % 2 == 1) {
                                         setState(() {
-                                          checkbox1 = "assest/checkcircle.png";
+                                          checkbox1 = "assets/checkcircle.png";
                                           checkbox2 =
-                                              "assest/uncheckcircle.png";
+                                              "assets/uncheckcircle.png";
                                           checkbox3 =
-                                              "assest/uncheckcircle.png";
+                                              "assets/uncheckcircle.png";
                                         });
                                       }
                                       if (SearchPanel_Checkbox1 % 2 == 0) {
                                         setState(() {
                                           checkbox1 =
-                                              "assest/uncheckcircle.png";
+                                              "assets/uncheckcircle.png";
                                         });
                                       }
                                     }),
@@ -140,17 +140,17 @@ class _SearchPanelState extends State<SearchPanel> {
                                       SearchPanel_Checkbox3 = 0;
                                       if (SearchPanel_Checkbox2 % 2 == 1) {
                                         setState(() {
-                                          checkbox2 = "assest/checkcircle.png";
+                                          checkbox2 = "assets/checkcircle.png";
                                           checkbox1 =
-                                              "assest/uncheckcircle.png";
+                                              "assets/uncheckcircle.png";
                                           checkbox3 =
-                                              "assest/uncheckcircle.png";
+                                              "assets/uncheckcircle.png";
                                         });
                                       }
                                       if (SearchPanel_Checkbox2 % 2 == 0) {
                                         setState(() {
                                           checkbox2 =
-                                              "assest/uncheckcircle.png";
+                                              "assets/uncheckcircle.png";
                                         });
                                       }
                                     }),
@@ -195,17 +195,17 @@ class _SearchPanelState extends State<SearchPanel> {
                                       SearchPanel_Checkbox2 = 0;
                                       if (SearchPanel_Checkbox3 % 2 == 1) {
                                         setState(() {
-                                          checkbox3 = "assest/checkcircle.png";
+                                          checkbox3 = "assets/checkcircle.png";
                                           checkbox2 =
-                                              "assest/uncheckcircle.png";
+                                              "assets/uncheckcircle.png";
                                           checkbox1 =
-                                              "assest/uncheckcircle.png";
+                                              "assets/uncheckcircle.png";
                                         });
                                       }
                                       if (SearchPanel_Checkbox3 % 2 == 0) {
                                         setState(() {
                                           checkbox3 =
-                                              "assest/uncheckcircle.png";
+                                              "assets/uncheckcircle.png";
                                         });
                                       }
                                     }),
@@ -332,7 +332,7 @@ class _SearchPanelState extends State<SearchPanel> {
                         width: 17.11,
                         decoration: const BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage("assest/starfull.png"))),
+                                image: AssetImage("assets/starfull.png"))),
                       ),
                     ),
                     const SizedBox(
@@ -343,7 +343,7 @@ class _SearchPanelState extends State<SearchPanel> {
                       width: 17.11,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("assest/starfull.png"))),
+                              image: AssetImage("assets/starfull.png"))),
                     ),
                     const SizedBox(
                       width: 14.89,
@@ -353,7 +353,7 @@ class _SearchPanelState extends State<SearchPanel> {
                       width: 17.11,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("assest/starfull.png"))),
+                              image: AssetImage("assets/starfull.png"))),
                     ),
                     const SizedBox(
                       width: 14.89,
@@ -363,7 +363,7 @@ class _SearchPanelState extends State<SearchPanel> {
                       width: 17.11,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("assest/starfull.png"))),
+                              image: AssetImage("assets/starfull.png"))),
                     ),
                     const SizedBox(
                       width: 14.89,
@@ -373,7 +373,7 @@ class _SearchPanelState extends State<SearchPanel> {
                       width: 17.11,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("assest/starfull.png"))),
+                              image: AssetImage("assets/starfull.png"))),
                     ),
                     const SizedBox(
                       width: 57.44,
@@ -403,7 +403,7 @@ class _SearchPanelState extends State<SearchPanel> {
                         width: 17.11,
                         decoration: const BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage("assest/starfull.png"))),
+                                image: AssetImage("assets/starfull.png"))),
                       ),
                     ),
                     const SizedBox(
@@ -414,7 +414,7 @@ class _SearchPanelState extends State<SearchPanel> {
                       width: 17.11,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("assest/starfull.png"))),
+                              image: AssetImage("assets/starfull.png"))),
                     ),
                     const SizedBox(
                       width: 14.89,
@@ -424,7 +424,7 @@ class _SearchPanelState extends State<SearchPanel> {
                       width: 17.11,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("assest/starfull.png"))),
+                              image: AssetImage("assets/starfull.png"))),
                     ),
                     const SizedBox(
                       width: 14.89,
@@ -434,7 +434,7 @@ class _SearchPanelState extends State<SearchPanel> {
                       width: 17.11,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("assest/starfull.png"))),
+                              image: AssetImage("assets/starfull.png"))),
                     ),
                     const SizedBox(
                       width: 14.89,
@@ -467,7 +467,7 @@ class _SearchPanelState extends State<SearchPanel> {
                         width: 17.11,
                         decoration: const BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage("assest/starfull.png"))),
+                                image: AssetImage("assets/starfull.png"))),
                       ),
                     ),
                     const SizedBox(
@@ -478,7 +478,7 @@ class _SearchPanelState extends State<SearchPanel> {
                       width: 17.11,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("assest/starfull.png"))),
+                              image: AssetImage("assets/starfull.png"))),
                     ),
                     const SizedBox(
                       width: 14.89,
@@ -488,7 +488,7 @@ class _SearchPanelState extends State<SearchPanel> {
                       width: 17.11,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("assest/starfull.png"))),
+                              image: AssetImage("assets/starfull.png"))),
                     ),
                     const SizedBox(
                       width: 14.89,
@@ -527,7 +527,7 @@ class _SearchPanelState extends State<SearchPanel> {
                         width: 17.11,
                         decoration: const BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage("assest/starfull.png"))),
+                                image: AssetImage("assets/starfull.png"))),
                       ),
                     ),
                     const SizedBox(
@@ -538,7 +538,7 @@ class _SearchPanelState extends State<SearchPanel> {
                       width: 17.11,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("assest/starfull.png"))),
+                              image: AssetImage("assets/starfull.png"))),
                     ),
                     const SizedBox(
                       width: 14.89,

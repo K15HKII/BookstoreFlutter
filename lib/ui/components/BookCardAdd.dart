@@ -87,7 +87,7 @@ class _BookCardAddState extends State<BookCardAdd> {
                       width: 14,
                       decoration: const BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assest/trashcanicon.png")),
+                            image: AssetImage("assets/trashcanicon.png")),
                       ),
                       child: Align(
                         alignment: Alignment.topRight,
@@ -173,7 +173,7 @@ class _BookCardAddState extends State<BookCardAdd> {
                       width: 28,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage('assest/minusbutton.png'))),
+                              image: AssetImage('assets/minusbutton.png'))),
                       child: TextButton(
                           child: const Text(''),
                           onPressed: () {
@@ -218,7 +218,7 @@ class _BookCardAddState extends State<BookCardAdd> {
                       width: 28,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage('assest/plusbutton.png'))),
+                              image: AssetImage('assets/plusbutton.png'))),
                       child: TextButton(
                           child: const Text(''),
                           onPressed: () {

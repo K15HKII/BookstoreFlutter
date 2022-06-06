@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'register_page.dart';
 
 
-class ForgotPass extends StatefulWidget {
-  const ForgotPass({Key? key}) : super(key: key);
+class ForgotPassword extends StatefulWidget {
+  const ForgotPassword({Key? key}) : super(key: key);
 
   @override
-  State<ForgotPass> createState() => _ForgotPassState();
+  State<ForgotPassword> createState() => _ForgotPasswordState();
 }
 
-class _ForgotPassState extends State<ForgotPass> {
+class _ForgotPasswordState extends State<ForgotPassword> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -125,7 +125,7 @@ class _ForgotPassState extends State<ForgotPass> {
                 Container(
                   child: InkWell(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Registedpage2()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const RegisterPage()));
                     },
                     child: const Text('Đăng kí', style: TextStyle(color:Color(0xff001C44), fontSize: 27, fontWeight: FontWeight.bold, fontFamily: "Lato", shadows: [Shadow(offset: Offset(0,4),
                       blurRadius: 8.0,
@@ -141,7 +141,7 @@ class _ForgotPassState extends State<ForgotPass> {
             height: 212,
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assest/background_image.png'),
+                image: AssetImage('assets/background_image.png'),
                 fit: BoxFit.fitHeight,
               ),
             ),

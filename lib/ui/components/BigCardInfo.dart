@@ -22,9 +22,9 @@ class _BigCardInfoState extends State<BigCardInfo> {
   @override
   Widget build(BuildContext context) {
     //----------------------------------------------------------------
-    String starfull = "assest/starfull.png";
-    String starhalf = "assest/starhalf.png";
-    String starempty = "assest/starempty.png";
+    String starfull = "assets/starfull.png";
+    String starhalf = "assets/starhalf.png";
+    String starempty = "assets/starempty.png";
     String star1 = starfull;
     String star2 = starfull;
     String star3 = starfull;
@@ -150,13 +150,13 @@ class _BigCardInfoState extends State<BigCardInfo> {
                                       if (BigCardInfo_HeartInt % 2 == 1) {
                                         setState(() {
                                           heartuncheck =
-                                              "assest/heartcheck.png";
+                                              "assets/heartcheck.png";
                                         });
                                       }
                                       if (BigCardInfo_HeartInt % 2 == 0) {
                                         setState(() {
                                           heartuncheck =
-                                              "assest/heartuncheck.png";
+                                              "assets/heartuncheck.png";
                                         });
                                       }
                                     })),

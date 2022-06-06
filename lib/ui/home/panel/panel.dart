@@ -1,0 +1,1 @@
+export 'package:bookstore_flutter/ui/home/panel/home_panel.dart';

@@ -23,9 +23,9 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
 
     String PriceCardWithStarPrice = PriceCardWithStar_PriceInt.toString();
     String PriceCardWithStarStar = PriceCardWithStar_StarInt.toString();
-    String starfull = "assest/starfull.png";
-    String starhalf = "assest/starhalf.png";
-    String starempty = "assest/starempty.png";
+    String starfull = "assets/starfull.png";
+    String starhalf = "assets/starhalf.png";
+    String starempty = "assets/starempty.png";
     String starpick = "";
     if (PriceCardWithStar_StarInt >= 4) {
       starpick = starfull;
@@ -126,12 +126,12 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
                             PriceCardWithStar_HeartInt += 1;
                             if (PriceCardWithStar_HeartInt % 2 == 1) {
                               setState(() {
-                                heartuncheck = "assest/heartcheck.png";
+                                heartuncheck = "assets/heartcheck.png";
                               });
                             }
                             if (PriceCardWithStar_HeartInt % 2 == 0) {
                               setState(() {
-                                heartuncheck = "assest/heartuncheck.png";
+                                heartuncheck = "assets/heartuncheck.png";
                               });
                             }
                           })),

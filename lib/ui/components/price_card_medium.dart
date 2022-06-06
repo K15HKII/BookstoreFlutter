@@ -76,12 +76,12 @@ class _PriceCardState extends State<PriceCard> {
                               PriceCard_HeartInt += 1;
                               if (PriceCard_HeartInt % 2 == 1) {
                                 setState(() {
-                                  heartuncheck = "assest/heartcheck.png";
+                                  heartuncheck = "assets/heartcheck.png";
                                 });
                               }
                               if (PriceCard_HeartInt % 2 == 0) {
                                 setState(() {
-                                  heartuncheck = "assest/heartuncheck.png";
+                                  heartuncheck = "assets/heartuncheck.png";
                                 });
                               }
                             })),

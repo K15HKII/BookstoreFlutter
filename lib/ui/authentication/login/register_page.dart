@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
-class Registedpage2 extends StatefulWidget {
-  const Registedpage2({Key? key}) : super(key: key);
+class RegisterPage extends StatefulWidget {
+  const RegisterPage({Key? key}) : super(key: key);
 
   @override
-  State<Registedpage2> createState() => _RegistedpageState();
+  State<RegisterPage> createState() => _RegisterPageState();
 }
 
-bool _obscureText = true;
-bool checkedValue = true;
+class _RegisterPageState extends State<RegisterPage> {
 
-class _RegistedpageState extends State<Registedpage2> {
+  bool _obscureText = true;
+  bool checkedValue = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +29,7 @@ class _RegistedpageState extends State<Registedpage2> {
                 height: 160,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assest/background_image.png'),
+                    image: AssetImage('assets/background_image.png'),
                     fit: BoxFit.fitHeight,
                   ),
                 ),
