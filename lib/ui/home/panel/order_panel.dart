@@ -1,3 +1,5 @@
+import 'package:bookstore_flutter/data/models/bill_status.dart';
+import 'package:bookstore_flutter/ui/components/order_card.dart';
 import 'package:bookstore_flutter/ui/components/price_card_big.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -10,6 +12,13 @@ class OrderPanel extends StatefulWidget {
 }
 
 class _OrderPanelState extends State<OrderPanel> {
+  static const Map<BillStatus, String> Labels = {
+    BillStatus.waiting: 'Đang chờ',
+    BillStatus.transporting: 'Đang giao',
+    BillStatus.finished: 'Đã giao',
+    BillStatus.canceled: 'Đã hủy',
+  };
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -19,27 +28,30 @@ class _OrderPanelState extends State<OrderPanel> {
           height: 50,
           child: Align(
             alignment: Alignment.centerLeft,
-            child: ListView(
+            child: ListView.builder(
               shrinkWrap: true,
               scrollDirection: Axis.horizontal,
               padding: const EdgeInsets.all(8),
-              children: <Widget>[
-                TextButton(child: const Text("Chờ"), onPressed: () {}),
-                TextButton(child: const Text("Đặt hàng"), onPressed: () {}),
-              ],
+              itemCount: Labels.length,
+              itemBuilder: (BuildContext context, int index) {
+                return TextButton(
+                    onPressed: () {},
+                    child: Text(Labels[BillStatus.values[index]]!));
+              },
             ),
           ),
         ),
         Expanded(
             child: Center(
                 child: SingleChildScrollView(
-          child: Wrap(children: [
-            DesignCardWithStar("Test", "assets/testbg.jpg", 10, 0.5),
-            DesignCardWithStar("Test", "assets/testbg.jpg", 10, 0.5),
-            DesignCardWithStar("Test", "assets/testbg.jpg", 10, 0.5),
-            DesignCardWithStar("Test", "assets/testbg.jpg", 10, 0.5),
-            DesignCardWithStar("Test", "assets/testbg.jpg", 10, 0.5)
-          ]),
+          child: ListView(
+            scrollDirection: Axis.vertical,
+            shrinkWrap: true,
+            children: const [
+              OrderCard(),
+              OrderCard(),
+            ],
+          ),
         )))
       ],
     );
