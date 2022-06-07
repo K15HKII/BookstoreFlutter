@@ -1,11 +1,13 @@
 import 'package:bookstore_flutter/main.dart';
 import 'package:bookstore_flutter/ui/authentication/login/forgot_password_page.dart';
+import 'package:bookstore_flutter/ui/home/panel/favourite_panel.dart';
 import 'package:bookstore_flutter/ui/home/panel/home_panel.dart';
+import 'package:bookstore_flutter/ui/home/panel/lend_panel.dart';
 import 'package:bookstore_flutter/ui/home/panel/order_panel.dart';
 import 'package:flutter/material.dart';
 
 import '../authentication/login/register_page.dart';
-import '../components/DesignCardView.dart';
+import '../components/card_samples.dart';
 import '../components/book_panel.dart';
 
 class MainPage extends StatefulWidget {
@@ -22,14 +24,8 @@ class _MainPageState extends State<MainPage> {
   static const List<Widget> _widgetOptions = <Widget>[
     HomePanel(),
     OrderPanel(),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 3: School',
-      style: optionStyle,
-    ),
+    FavouritePanel(),
+    LendPanel(),
     Text(
       'Index 2: School',
       style: optionStyle,

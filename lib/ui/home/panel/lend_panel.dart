@@ -1,22 +1,21 @@
 import 'package:bookstore_flutter/data/models/bill_status.dart';
+import 'package:bookstore_flutter/data/models/lend_status.dart';
+import 'package:bookstore_flutter/ui/components/lend_card.dart';
 import 'package:bookstore_flutter/ui/components/order_card.dart';
 import 'package:bookstore_flutter/ui/components/price_card_big.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class OrderPanel extends StatefulWidget {
-  const OrderPanel({Key? key}) : super(key: key);
+class LendPanel extends StatefulWidget {
+  const LendPanel({Key? key}) : super(key: key);
 
   @override
-  State<OrderPanel> createState() => _OrderPanelState();
+  State<LendPanel> createState() => _LendPanelState();
 }
 
-class _OrderPanelState extends State<OrderPanel> {
-  static const Map<BillStatus, String> Labels = {
-    BillStatus.waiting: 'Đang chờ',
-    BillStatus.transporting: 'Đang giao',
-    BillStatus.finished: 'Đã giao',
-    BillStatus.canceled: 'Đã hủy',
+class _LendPanelState extends State<LendPanel> {
+  static const Map<LendStatus, String> Labels = {
+
   };
 
   int _selectedIndex = 0;
@@ -57,7 +56,7 @@ class _OrderPanelState extends State<OrderPanel> {
                 scrollDirection: Axis.vertical,
                 itemCount: _selectedIndex + 1,
                 itemBuilder: (context, index) {
-                  return const OrderCard();
+                  return const LendCard();
                 }))
       ],
     );

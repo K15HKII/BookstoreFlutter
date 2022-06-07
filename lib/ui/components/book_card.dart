@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'DesignCardView.dart';
+import 'card_samples.dart';
 
 class BookCard extends StatefulWidget {
   BookCard(String Title, String Image, int Amount, String Type, {Key? key})

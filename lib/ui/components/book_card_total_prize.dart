@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'DesignCardView.dart';
+import 'card_samples.dart';
 
 class BookCardWithTotalPrize extends StatefulWidget {
   BookCardWithTotalPrize(

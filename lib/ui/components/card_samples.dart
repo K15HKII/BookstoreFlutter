@@ -1,12 +1,5 @@
 import 'package:flutter/material.dart';
 
-class DesignCard extends StatefulWidget {
-  const DesignCard({Key? key}) : super(key: key);
-
-  @override
-  State<DesignCard> createState() => _DesignCardState();
-}
-
 // Không hiểu vì sao nhưng khi đặt biến heart int bên ngoài này thì bấm trái tím nhiều lần ms đổi qua đổi lại còn build thẳng trên class thì lại không, nên đừng có thay đổi =)))
 int heartcheck = 0;
 String heartuncheck = "assets/heartuncheck.png";
@@ -67,14 +60,3 @@ int BookCardAdd_CountInt = 0;
 //title-image-type-originPrice-amount(start_with_0)
 //BookCardAdd("Huy cutee", "assets/testbg.jpg","Bìa siêu mềm",10000,0)
 //----------------------------------------------------------------------------------------------------------------------------
-
-class _DesignCardState extends State<DesignCard> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: Colors.black,
-        body: Column(
-          children: const <Widget>[],
-        ));
-  }
-}

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'DesignCardView.dart';
+import 'card_samples.dart';
 
 class TopicCard extends StatefulWidget {
   TopicCard(String Topic, String Image, {Key? key}) : super(key: key) {

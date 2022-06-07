@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(huy12345 LANGUAGES CXX)
+project(bookstore_flutter LANGUAGES CXX)
 
-set(BINARY_NAME "huy12345")
+set(BINARY_NAME "bookstore_flutter")
 
 cmake_policy(SET CMP0063 NEW)
 

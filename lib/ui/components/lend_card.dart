@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class OrderCard extends StatefulWidget {
-  const OrderCard({Key? key}) : super(key: key);
+class LendCard extends StatefulWidget {
+  const LendCard({Key? key}) : super(key: key);
 
   @override
-  State<OrderCard> createState() => _OrderCardState();
+  State<LendCard> createState() => _LendCardState();
 }
 
-class _OrderCardState extends State<OrderCard> {
+class _LendCardState extends State<LendCard> {
   @override
   Widget build(BuildContext context) {
     return Column(mainAxisSize: MainAxisSize.min, children: [
@@ -19,8 +19,7 @@ class _OrderCardState extends State<OrderCard> {
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
           children: const [
-            OrderCardDetail(image: "assets/testbg.jpg"),
-            OrderCardDetail(image: "assets/testbg.jpg"),
+            LendCardDetail(image: "assets/testbg.jpg"),
           ],
         ),
       ),
@@ -36,10 +35,10 @@ class _OrderCardState extends State<OrderCard> {
   }
 }
 
-class OrderCardDetail extends StatelessWidget {
+class LendCardDetail extends StatelessWidget {
   final String image;
 
-  const OrderCardDetail({Key? key, required this.image}) : super(key: key);
+  const LendCardDetail({Key? key, required this.image}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

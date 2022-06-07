@@ -1,0 +1,5 @@
+enum LendStatus {
+
+  lending, canceled,
+
+}

@@ -1,13 +1,18 @@
+import 'package:bookstore_flutter/dependency.dart';
 import 'package:bookstore_flutter/ui/authentication/login/login_page.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: FirstRoute(),
-      theme: ThemeData(),
-));
+void main() {
+  configureDependencies();
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: FirstRoute(),
+    theme: ThemeData(),
+  ));
+}
 
 class FirstRoute extends StatefulWidget {
+
   @override
   State<FirstRoute> createState() => _FirstRouteState();
 }

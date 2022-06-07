@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'DesignCardView.dart';
+import 'card_samples.dart';
 
 class BigCardInfo extends StatefulWidget {
   BigCardInfo(String Title, String Image, int Price, int Amount, double Rate,
