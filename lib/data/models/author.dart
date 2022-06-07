@@ -7,6 +7,15 @@ part 'author.g.dart';
 
 abstract class Author implements Built<Author, AuthorBuilder> {
 
+  @BuiltValueField(wireName: "id")
+  int get id;
+
+  @BuiltValueField(wireName: "name")
+  String get name;
+
+  @BuiltValueField(wireName: "description")
+  String get description;
+
   Author._();
   factory Author([void Function(AuthorBuilder) updates]) = _$Author;
 
