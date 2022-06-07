@@ -1,4 +1,4 @@
-import 'package:bookstore_flutter/data/models/login_response.dart';
+import 'package:bookstore_flutter/data/models/auth/login_response.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 
