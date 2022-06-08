@@ -7,6 +7,15 @@ part 'publisher.g.dart';
 
 abstract class Publisher implements Built<Publisher, PublisherBuilder> {
 
+  @BuiltValueField(wireName: "id")
+  int get id;
+
+  @BuiltValueField(wireName: "name")
+  String get name;
+
+  @BuiltValueField(wireName: "description")
+  String get description;
+
   Publisher._();
   factory Publisher([void Function(PublisherBuilder) updates]) = _$Publisher;
 
