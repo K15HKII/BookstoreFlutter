@@ -30,7 +30,7 @@ class _LendPanelState extends State<LendPanel> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Align(alignment: Alignment.centerLeft, child: Text("Kho sách")),
+        const Align(alignment: Alignment.centerLeft, child: Text("Kho sách2")),
         SizedBox(
           height: 50,
           child: Align(

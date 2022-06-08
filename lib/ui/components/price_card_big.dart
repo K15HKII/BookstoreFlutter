@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'card_samples.dart';
 
 class DesignCardWithStar extends StatefulWidget {
-  DesignCardWithStar(String Title, String Image, int Price, double Rate,
+  String PriceCardWithStar_Title;
+  String PriceCardWithStar_Image;
+  double PriceCardWithStar_PriceInt;
+  double PriceCardWithStar_StarInt;
+  DesignCardWithStar(@required this.PriceCardWithStar_Title, this.PriceCardWithStar_Image,this.PriceCardWithStar_PriceInt,this.PriceCardWithStar_StarInt,
       {Key? key})
       : super(key: key) {
-    PriceCardWithStar_Title = Title;
-    PriceCardWithStar_Image = Image;
-    PriceCardWithStar_PriceInt = Price;
-    PriceCardWithStar_StarInt = Rate;
   }
 
   @override
@@ -20,20 +20,23 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
   @override
   Widget build(BuildContext context) {
     //------------------------------------------------------------------------
-
-    String PriceCardWithStarPrice = PriceCardWithStar_PriceInt.toString();
-    String PriceCardWithStarStar = PriceCardWithStar_StarInt.toString();
+    widget.PriceCardWithStar_Title;
+    widget.PriceCardWithStar_Image;
+    widget.PriceCardWithStar_PriceInt;
+    widget.PriceCardWithStar_StarInt;
+    String PriceCardWithStarPrice = widget.PriceCardWithStar_PriceInt.toString();
+    String PriceCardWithStarStar = widget.PriceCardWithStar_StarInt.toString();
     String starfull = "assets/starfull.png";
     String starhalf = "assets/starhalf.png";
     String starempty = "assets/starempty.png";
     String starpick = "";
-    if (PriceCardWithStar_StarInt >= 4) {
+    if (widget.PriceCardWithStar_StarInt >= 4) {
       starpick = starfull;
     }
-    if (PriceCardWithStar_StarInt < 4 && PriceCardWithStar_StarInt > 2) {
+    if (widget.PriceCardWithStar_StarInt < 4 && widget.PriceCardWithStar_StarInt > 2) {
       starpick = starhalf;
     }
-    if (PriceCardWithStar_StarInt <= 2) {
+    if (widget.PriceCardWithStar_StarInt <= 2) {
       starpick = starempty;
     }
     //------------------------------------------------------------------------
@@ -52,7 +55,7 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
               width: 172,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage(PriceCardWithStar_Image),
+                  image: AssetImage(widget.PriceCardWithStar_Image),
                   fit: BoxFit.fitHeight,
                 ),
               ),
@@ -75,7 +78,7 @@ class _DesignCardWithStarState extends State<DesignCardWithStar> {
                         width: 124,
                         height: 36,
                         child: Text(
-                          PriceCardWithStar_Title,
+                          widget.PriceCardWithStar_Title,
                           style: const TextStyle(
                               fontSize: 15,
                               color: Colors.black,
