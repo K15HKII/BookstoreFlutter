@@ -15,9 +15,6 @@ abstract class Transport implements Built<Transport, TransportBuilder> {
   @BuiltValueField(wireName: "raw")
   String get raw;
 
-  @BuiltValueField(wireName: "bill")
-  Bill get bill;
-
   Transport._();
   factory Transport([void Function(TransportBuilder) updates]) = _$Transport;
 
