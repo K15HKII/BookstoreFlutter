@@ -1,9 +1,11 @@
 import 'package:bookstore_flutter/main.dart';
+import 'package:bookstore_flutter/ui/accountinfo/account_info.dart';
 import 'package:bookstore_flutter/ui/authentication/login/forgot_password_page.dart';
 import 'package:bookstore_flutter/ui/home/panel/favourite_panel.dart';
 import 'package:bookstore_flutter/ui/home/panel/home_panel.dart';
 import 'package:bookstore_flutter/ui/home/panel/lend_panel.dart';
 import 'package:bookstore_flutter/ui/home/panel/order_panel.dart';
+import 'package:bookstore_flutter/ui/home/panel/setting_panel.dart';
 import 'package:flutter/material.dart';
 
 import '../authentication/login/register_page.dart';
@@ -25,11 +27,9 @@ class _MainPageState extends State<MainPage> {
     HomePanel(),
     OrderPanel(),
     FavouritePanel(),
-    LendPanel(),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
+    AccountInfo(),
+    // LendPanel(),
+    SettingPanel(),
   ];
 
   void _onItemTapped(int index) {
@@ -44,40 +44,38 @@ class _MainPageState extends State<MainPage> {
       body: Center(
         child: Column(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Expanded(
-                  child: Padding(
-                      padding: const EdgeInsets.fromLTRB(5, 5, 15, 0),
-                      child: Container(
-                        height: 55,
-                        padding: const EdgeInsets.only(left: 30),
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(25),
-                            boxShadow: const [
-                              BoxShadow(
-                                  color: Color.fromARGB(90, 0, 0, 0),
-                                  blurRadius: 20,
-                                  offset: Offset(0, 10))
-                            ]),
-                        child: TextFormField(
-                          decoration: const InputDecoration(
-                              prefixIcon: Icon(Icons.search),
-                              suffixIcon: Icon(Icons.filter_alt_outlined)),
-                        ),
-                      )),
-                ),
-                const Icon(Icons.notifications),
-                const Icon(Icons.shopping_cart)
-              ],
-            ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   mainAxisSize: MainAxisSize.min,
+            //   children: [
+            //     Expanded(
+            //       child: Padding(
+            //           padding: const EdgeInsets.fromLTRB(5, 5, 15, 0),
+            //           child: Container(
+            //             height: 55,
+            //             padding: const EdgeInsets.only(left: 30),
+            //             decoration: BoxDecoration(
+            //                 color: Colors.white,
+            //                 borderRadius: BorderRadius.circular(25),
+            //                 boxShadow: const [
+            //                   BoxShadow(
+            //                       color: Color.fromARGB(90, 0, 0, 0),
+            //                       blurRadius: 20,
+            //                       offset: Offset(0, 10))
+            //                 ]),
+            //             child: TextFormField(
+            //               decoration: const InputDecoration(
+            //                   prefixIcon: Icon(Icons.search),
+            //                   suffixIcon: Icon(Icons.filter_alt_outlined)),
+            //             ),
+            //           )),
+            //     ),
+            //     const Icon(Icons.notifications),
+            //     const Icon(Icons.shopping_cart)
+            //   ],
+            // ),
             Expanded(
-                child: Center(
-              child: _widgetOptions.elementAt(_selectedIndex),
-            ))
+                child: _widgetOptions.elementAt(_selectedIndex))
           ],
         ),
       ),
