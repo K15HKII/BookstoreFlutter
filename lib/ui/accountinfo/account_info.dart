@@ -50,7 +50,7 @@ class _AccountInfoState extends State<AccountInfo> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 30),
+                  padding: const EdgeInsets.only(top: 30,left: 10,right: 10),
                   child: Container(
                       height: 60,
                       margin: const EdgeInsets.symmetric(horizontal: 10),
@@ -113,7 +113,7 @@ class _AccountInfoState extends State<AccountInfo> {
                       )),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 2),
+                  padding: const EdgeInsets.only(top: 2,left: 10,right: 10),
                   child: Container(
                       height: 60,
                       margin: const EdgeInsets.symmetric(horizontal: 10),
@@ -174,7 +174,7 @@ class _AccountInfoState extends State<AccountInfo> {
                       )),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 2),
+                  padding: const EdgeInsets.only(top: 2,left: 10,right: 10),
                   child: Container(
                       height: 60,
                       margin: const EdgeInsets.symmetric(horizontal: 10),
@@ -235,7 +235,7 @@ class _AccountInfoState extends State<AccountInfo> {
                       )),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 2),
+                  padding: const EdgeInsets.only(top: 2,left: 10,right: 10),
                   child: Container(
                       height: 60,
                       margin: const EdgeInsets.symmetric(horizontal: 10),
@@ -296,7 +296,7 @@ class _AccountInfoState extends State<AccountInfo> {
                       )),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 2),
+                  padding: const EdgeInsets.only(top: 2,left: 10,right: 10),
                   child: Container(
                       height: 60,
                       margin: const EdgeInsets.symmetric(horizontal: 10),
@@ -361,7 +361,7 @@ class _AccountInfoState extends State<AccountInfo> {
                 Wrap(
                   children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.only(top: 15),
+                      padding: const EdgeInsets.only(top: 15,left: 10,right: 10),
                       child: Column(
                         children: [
                           Container(
@@ -384,7 +384,7 @@ class _AccountInfoState extends State<AccountInfo> {
                                   child: Stack(
                                     children: [
                                       Padding(
-                                          padding: const EdgeInsets.only(top: 10,left: 15),
+                                          padding: const EdgeInsets.only(top: 15,left: 15),
                                           child: Align(
                                             alignment: Alignment.centerLeft,
                                             child: Text("Địa chỉ",
@@ -400,7 +400,7 @@ class _AccountInfoState extends State<AccountInfo> {
                                             children: [
                                               Padding(
                                                   padding:
-                                                  const EdgeInsets.only(top: 12,right: 15),
+                                                  const EdgeInsets.only(top: 15,right: 15),
                                                   child: Align(
                                                       alignment: Alignment.centerRight,
                                                       child: Icon(
@@ -429,7 +429,7 @@ class _AccountInfoState extends State<AccountInfo> {
                   ]
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 2),
+                  padding: const EdgeInsets.only(top: 2,left: 10,right: 10),
                   child: Container(
                       height: 60,
                       margin: const EdgeInsets.symmetric(horizontal: 10),
@@ -479,7 +479,7 @@ class _AccountInfoState extends State<AccountInfo> {
                       )),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 30),
+                  padding: const EdgeInsets.only(top: 30,left: 10,right: 10),
                   child: Container(
                       height: 60,
                       margin: const EdgeInsets.symmetric(horizontal: 10),
@@ -529,7 +529,7 @@ class _AccountInfoState extends State<AccountInfo> {
                       )),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 2, bottom: 30),
+                  padding: const EdgeInsets.only(top: 2, bottom: 30,left: 10,right: 10),
                   child: Container(
                       height: 60,
                       margin: const EdgeInsets.symmetric(horizontal: 10),

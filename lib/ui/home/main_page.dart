@@ -6,6 +6,16 @@ import 'package:bookstore_flutter/ui/home/panel/home_panel.dart';
 import 'package:bookstore_flutter/ui/home/panel/lend_panel.dart';
 import 'package:bookstore_flutter/ui/home/panel/order_panel.dart';
 import 'package:bookstore_flutter/ui/home/panel/setting_panel.dart';
+import 'package:bookstore_flutter/ui/home/panel/settingitem/help/delete_account.dart';
+import 'package:bookstore_flutter/ui/home/panel/settingitem/help/help_info.dart';
+import 'package:bookstore_flutter/ui/home/panel/settingitem/help/introduction.dart';
+import 'package:bookstore_flutter/ui/home/panel/settingitem/help/policy.dart';
+import 'package:bookstore_flutter/ui/home/panel/settingitem/helpcenter.dart';
+import 'package:bookstore_flutter/ui/home/panel/settingitem/setting/language.dart';
+import 'package:bookstore_flutter/ui/home/panel/settingitem/setting/notificaiton/bill_notification.dart';
+import 'package:bookstore_flutter/ui/home/panel/settingitem/setting/notification_setting.dart';
+import 'package:bookstore_flutter/ui/home/panel/settingitem/setting/privacy.dart';
+import 'package:bookstore_flutter/ui/home/panel/settingitem/setting_app.dart';
 import 'package:flutter/material.dart';
 
 import '../authentication/login/register_page.dart';
@@ -27,7 +37,7 @@ class _MainPageState extends State<MainPage> {
     HomePanel(),
     OrderPanel(),
     FavouritePanel(),
-    AccountInfo(),
+    Language(),
     // LendPanel(),
     SettingPanel(),
   ];
