@@ -34,8 +34,8 @@ abstract class UserAddress implements Built<UserAddress, UserAddressBuilder> {
   UserAddress._();
   factory UserAddress([void Function(UserAddressBuilder) updates]) = _$UserAddress;
 
-  Object toJson() {
-    return serializers.serializeWith(UserAddress.serializer, this)!;
+  Map<String, dynamic> toJson() {
+    return serializers.serializeWith(UserAddress.serializer, this)! as Map<String, dynamic>;
   }
 
   static UserAddress fromJson(Map<String, dynamic> json) {

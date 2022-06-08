@@ -1,5 +1,5 @@
-import 'package:bookstore_flutter/data/models/bill_status.dart';
-import 'package:bookstore_flutter/data/models/lend_status.dart';
+import 'package:bookstore_flutter/data/models/bill/bill_status.dart';
+import 'package:bookstore_flutter/data/models/lend/lend_status.dart';
 import 'package:bookstore_flutter/ui/components/lend_card.dart';
 import 'package:bookstore_flutter/ui/components/order_card.dart';
 import 'package:bookstore_flutter/ui/components/price_card_big.dart';

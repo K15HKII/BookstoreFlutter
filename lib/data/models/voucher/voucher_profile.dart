@@ -1,15 +1,11 @@
-
 import 'package:bookstore_flutter/data/models/serializers.dart';
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
-import 'voucher.dart';
-import 'wild_voucher.dart';
-
 part 'voucher_profile.g.dart';
 
-abstract class VoucherProfile implements Built<VoucherProfile, VoucherProfileBuilder> {
+abstract class AbstractVoucherProfile {
 
   @BuiltValueField(wireName: "id")
   String get id;
@@ -29,11 +25,15 @@ abstract class VoucherProfile implements Built<VoucherProfile, VoucherProfileBui
   @BuiltValueField(wireName: "discount")
   int get discount;
 
-  @BuiltValueField(wireName: "vouchers")
-  ListBuilder<Voucher> get vouchers;
+  // @BuiltValueField(wireName: "vouchers")
+  // ListBuilder<Voucher> get vouchers;
+  //
+  // @BuiltValueField(wireName: "wild_vouchers")
+  // ListBuilder<WildVoucher> get wildVouchers;
 
-  @BuiltValueField(wireName: "wild_vouchers")
-  ListBuilder<WildVoucher> get wildVouchers;
+}
+
+abstract class VoucherProfile extends Object with AbstractVoucherProfile implements Built<VoucherProfile, VoucherProfileBuilder> {
 
   VoucherProfile._();
   factory VoucherProfile([void Function(VoucherProfileBuilder) updates]) = _$VoucherProfile;

@@ -5,7 +5,7 @@ import 'package:built_value/serializer.dart';
 
 part 'file.g.dart';
 
-abstract class File implements Built<File, FileBuilder> {
+abstract class AbstractFile {
 
   @BuiltValueField(wireName: "id")
   String get id;
@@ -15,6 +15,10 @@ abstract class File implements Built<File, FileBuilder> {
 
   @BuiltValueField(wireName: "path")
   String get path;
+
+}
+
+abstract class File implements AbstractFile, Built<File, FileBuilder> {
 
   File._();
   factory File([void Function(FileBuilder) updates]) = _$File;
@@ -28,4 +32,4 @@ abstract class File implements Built<File, FileBuilder> {
   }
 
   static Serializer<File> get serializer => _$fileSerializer;
-}t
+}

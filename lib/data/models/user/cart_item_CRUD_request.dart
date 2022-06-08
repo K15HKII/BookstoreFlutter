@@ -19,8 +19,8 @@ abstract class CartItemCrudRequest implements Built<CartItemCrudRequest, CartIte
   CartItemCrudRequest._();
   factory CartItemCrudRequest([void Function(CartItemCrudRequestBuilder) updates]) = _$CartItemCrudRequest;
 
-  Object toJson() {
-    return serializers.serializeWith(CartItemCrudRequest.serializer, this)!;
+  Map<String, dynamic> toJson() {
+    return serializers.serializeWith(CartItemCrudRequest.serializer, this)! as Map<String, dynamic>;
   }
 
   static CartItemCrudRequest fromJson(Map<String, dynamic> json) {

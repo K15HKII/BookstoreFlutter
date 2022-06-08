@@ -3,7 +3,7 @@ import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
-import 'book.dart';
+import '../book.dart';
 
 part 'cart_item.g.dart';
 
@@ -24,8 +24,8 @@ abstract class CartItem implements Built<CartItem, CartItemBuilder> {
   CartItem._();
   factory CartItem([void Function(CartItemBuilder) updates]) = _$CartItem;
 
-  Object toJson() {
-    return serializers.serializeWith(CartItem.serializer, this)!;
+  Map<String, dynamic> toJson() {
+    return serializers.serializeWith(CartItem.serializer, this)! as Map<String, dynamic>;
   }
 
   static CartItem fromJson(Map<String, dynamic> json) {

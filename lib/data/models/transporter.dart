@@ -17,9 +17,6 @@ abstract class Transporter implements Built<Transporter, TransporterBuilder> {
   @BuiltValueField(wireName: "description")
   String get description;
 
-  @BuiltValueField(wireName: "transports")
-  BuiltList<Transport> get transports;
-
   Transporter._();
   factory Transporter([void Function(TransporterBuilder) updates]) = _$Transporter;
 

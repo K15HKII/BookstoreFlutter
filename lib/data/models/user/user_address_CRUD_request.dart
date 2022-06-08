@@ -22,8 +22,8 @@ abstract class UserAddressCrudRequest implements Built<UserAddressCrudRequest, U
   UserAddressCrudRequest._();
   factory UserAddressCrudRequest([void Function(UserAddressCrudRequestBuilder) updates]) = _$UserAddressCrudRequest;
 
-  Object toJson() {
-    return serializers.serializeWith(UserAddressCrudRequest.serializer, this)!;
+  Map<String, dynamic> toJson() {
+    return serializers.serializeWith(UserAddressCrudRequest.serializer, this)! as Map<String, dynamic>;
   }
 
   static UserAddressCrudRequest fromJson(Map<String, dynamic> json) {

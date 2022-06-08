@@ -3,9 +3,9 @@ import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
-import 'bill.dart';
+import 'bill/bill.dart';
 
-part 'Transport.g.dart';
+part 'transport.g.dart';
 
 abstract class Transport implements Built<Transport, TransportBuilder> {
 

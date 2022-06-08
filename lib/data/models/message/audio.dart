@@ -1,4 +1,4 @@
-import 'package:bookstore_flutter/data/models/file.dart';
+import 'package:bookstore_flutter/data/models/message/file.dart';
 import 'package:bookstore_flutter/data/models/serializers.dart';
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
@@ -6,7 +6,7 @@ import 'package:built_value/serializer.dart';
 
 part 'audio.g.dart';
 
-abstract class Audio extends File implements Built<Audio, AudioBuilder> {
+abstract class Audio extends Object with AbstractFile implements Built<Audio, AudioBuilder> {
 
   @BuiltValueField(wireName: "duration")
   double get duration;

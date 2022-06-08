@@ -1,8 +1,7 @@
+import 'package:bookstore_flutter/data/models/user/gender.dart';
 import 'package:bookstore_flutter/data/models/serializers.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
-
-import 'gender.dart';
 
 part 'user.g.dart';
 

@@ -19,8 +19,8 @@ abstract class UserBankCrudRequest implements Built<UserBankCrudRequest, UserBan
   UserBankCrudRequest._();
   factory UserBankCrudRequest([void Function(UserBankCrudRequestBuilder) updates]) = _$UserBankCrudRequest;
 
-  Object toJson() {
-    return serializers.serializeWith(UserBankCrudRequest.serializer, this)!;
+  Map<String, dynamic> toJson() {
+    return serializers.serializeWith(UserBankCrudRequest.serializer, this)! as Map<String, dynamic>;
   }
 
   static UserBankCrudRequest fromJson(Map<String, dynamic> json) {

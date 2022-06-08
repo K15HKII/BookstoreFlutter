@@ -1,13 +1,13 @@
+import 'package:bookstore_flutter/data/models/bill/bill_detail.dart';
+import 'package:bookstore_flutter/data/models/bill/bill_status.dart';
+import 'package:bookstore_flutter/data/models/payment.dart';
 import 'package:bookstore_flutter/data/models/serializers.dart';
+import 'package:bookstore_flutter/data/models/transport.dart';
+import 'package:bookstore_flutter/data/models/user/user_address.dart';
+import 'package:bookstore_flutter/data/models/voucher/voucher_profile.dart';
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
-import 'user_address.dart';
-import 'bill_detail.dart';
-import 'transport.dart';
-import 'bill_status.dart';
-import 'voucher_profile.dart';
-import 'payment.dart';
 
 part 'bill.g.dart';
 

@@ -22,8 +22,8 @@ abstract class UserBank implements Built<UserBank, UserBankBuilder> {
   UserBank._();
   factory UserBank([void Function(UserBankBuilder) updates]) = _$UserBank;
 
-  Object toJson() {
-    return serializers.serializeWith(UserBank.serializer, this)!;
+  Map<String, dynamic> toJson() {
+    return serializers.serializeWith(UserBank.serializer, this)! as Map<String, dynamic>;
   }
 
   static UserBank fromJson(Map<String, dynamic> json) {

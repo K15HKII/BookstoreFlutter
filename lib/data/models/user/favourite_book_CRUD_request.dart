@@ -16,8 +16,8 @@ abstract class FavouriteBookCrudRequest implements Built<FavouriteBookCrudReques
   FavouriteBookCrudRequest._();
   factory FavouriteBookCrudRequest([void Function(FavouriteBookCrudRequestBuilder) updates]) = _$FavouriteBookCrudRequest;
 
-  Object toJson() {
-    return serializers.serializeWith(FavouriteBookCrudRequest.serializer, this)!;
+  Map<String, dynamic> toJson() {
+    return serializers.serializeWith(FavouriteBookCrudRequest.serializer, this)! as Map<String, dynamic>;
   }
 
   static FavouriteBookCrudRequest fromJson(Map<String, dynamic> json) {

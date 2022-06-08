@@ -1,13 +1,13 @@
-import 'package:bookstore_flutter/data/models/image.dart';
+import 'package:bookstore_flutter/data/models/message/image.dart';
 import 'package:bookstore_flutter/data/models/serializers.dart';
-import 'package:bookstore_flutter/data/models/video.dart';
+import 'package:bookstore_flutter/data/models/message/video.dart';
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
 part 'message.g.dart';
 
-abstract class Message implements Built<Message, MessageBuilder> {
+abstract class AbstractMessage {
 
   @BuiltValueField(wireName: "id")
   String get id;
@@ -15,11 +15,15 @@ abstract class Message implements Built<Message, MessageBuilder> {
   @BuiltValueField(wireName: "text")
   String get text;
 
-  @BuiltValueField(wireName: "images")
-  BuiltList<Image> get images;
+  // @BuiltValueField(wireName: "images")
+  // BuiltList<Image> get images;
+  //
+  // @BuiltValueField(wireName: "videos")
+  // BuiltList<Video> get videos;
 
-  @BuiltValueField(wireName: "videos")
-  BuiltList<Video> get videos;
+}
+
+abstract class Message extends Object with AbstractMessage implements Built<Message, MessageBuilder> {
 
   Message._();
   factory Message([void Function(MessageBuilder) updates]) = _$Message;

@@ -7,7 +7,7 @@ import 'file.dart';
 
 part 'document.g.dart';
 
-abstract class Document extends File implements Built<Document, DocumentBuilder> {
+abstract class Document extends Object with AbstractFile implements Built<Document, DocumentBuilder> {
 
   @BuiltValueField(wireName: "duration")
   double get size;

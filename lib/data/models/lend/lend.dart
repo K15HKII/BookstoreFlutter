@@ -1,4 +1,4 @@
-import 'package:bookstore_flutter/data/models/lend_status.dart';
+import 'package:bookstore_flutter/data/models/lend/lend_status.dart';
 import 'package:bookstore_flutter/data/models/serializers.dart';
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
