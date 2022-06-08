@@ -3,7 +3,7 @@ import 'package:bookstore_flutter/ui/components/order_card.dart';
 import 'package:bookstore_flutter/ui/components/price_card_big.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
+import 'package:bookstore_flutter/ui/components/card_samples.dart';
 class OrderPanel extends StatefulWidget {
   const OrderPanel({Key? key}) : super(key: key);
 
@@ -13,10 +13,10 @@ class OrderPanel extends StatefulWidget {
 
 class _OrderPanelState extends State<OrderPanel> {
   static const Map<BillStatus, String> Labels = {
-    BillStatus.waiting: 'Đang chờ',
-    BillStatus.transporting: 'Đang giao',
-    BillStatus.finished: 'Đã giao',
-    BillStatus.canceled: 'Đã hủy',
+    BillStatus.waiting: 'Chờ xác nhận',
+    BillStatus.transporting: 'Đang vận chuyển',
+    BillStatus.finished: 'Đã vận chuyển',
+    BillStatus.canceled: 'Đánh giá',
   };
 
   int _selectedIndex = 0;
@@ -31,7 +31,7 @@ class _OrderPanelState extends State<OrderPanel> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Align(alignment: Alignment.centerLeft, child: Text("Kho sách")),
+        SizedBox(height: 30,),
         SizedBox(
           height: 50,
           child: Align(
@@ -57,7 +57,8 @@ class _OrderPanelState extends State<OrderPanel> {
                 scrollDirection: Axis.vertical,
                 itemCount: _selectedIndex + 1,
                 itemBuilder: (context, index) {
-                  return const OrderCard();
+                  return OrderCard( "Huy cute","huycute",3);
+
                 }))
       ],
     );

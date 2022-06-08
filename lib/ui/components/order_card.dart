@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
+import 'card_samples.dart';
 class OrderCard extends StatefulWidget {
-  const OrderCard({Key? key}) : super(key: key);
+  String Ordercard_title;
+  String Ordercard_type;
+  int Ordercard_amountInt;
+
+  OrderCard(@required this.Ordercard_title,this.Ordercard_type,this.Ordercard_amountInt,{Key? key}) : super(key: key);
 
   @override
   State<OrderCard> createState() => _OrderCardState();
@@ -11,6 +15,9 @@ class OrderCard extends StatefulWidget {
 class _OrderCardState extends State<OrderCard> {
   @override
   Widget build(BuildContext context) {
+    widget.Ordercard_type;
+    widget.Ordercard_title;
+    widget.Ordercard_amountInt;
     return Column(mainAxisSize: MainAxisSize.min, children: [
       Flexible(
         child: ListView(
@@ -18,9 +25,9 @@ class _OrderCardState extends State<OrderCard> {
           primary: false,
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
-          children: const [
-            OrderCardDetail(image: "assets/testbg.jpg"),
-            OrderCardDetail(image: "assets/testbg.jpg"),
+          children: [
+            OrderCardDetail(title: "test",image: "assets/testbg.jpg",type: "jjjj",amountInt: 6,price: 30000),
+            OrderCardDetail(title: "test2",image: "assets/testbg2.jpg",type: "jjjj",amountInt: 6,price: 40000),
           ],
         ),
       ),
@@ -38,11 +45,18 @@ class _OrderCardState extends State<OrderCard> {
 
 class OrderCardDetail extends StatelessWidget {
   final String image;
+  final String title;
+  final String type;
+  final int amountInt;
+  final int price;
 
-  const OrderCardDetail({Key? key, required this.image}) : super(key: key);
+  OrderCardDetail({Key? key,  required this.title,required this.image, required this.type, required this.amountInt, required this.price}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final String amount = amountInt.toString();
+    final finalpriceint=price*amountInt;
+    final String finalprice=finalpriceint.toString();
     return AspectRatio(
       aspectRatio: 327 / 100,
       child: Row(
@@ -50,20 +64,27 @@ class OrderCardDetail extends StatelessWidget {
         children: [
           AspectRatio(aspectRatio: 70 / 68, child: Image.asset(image)),
           const SizedBox(width: 10),
-          const Flexible(
+           Flexible(
               child: ListTile(
-                  title: Text("Sách Đắc Nhân Tâm"),
-                  subtitle: Text("Bìa cứng"))),
+                  title: Text(title),
+                  subtitle: Text(type))),
           const SizedBox(width: 32),
-          Column(mainAxisSize: MainAxisSize.min, children: const [
+          Column(mainAxisSize: MainAxisSize.min, children: [
             Align(
               alignment: Alignment.centerRight,
-              child: Text("x1"),
+              child:  Row(children: [
+                Text("x"),
+                Text(amount),
+              ],),
             ),
             SizedBox(height: 12),
             Align(
               alignment: Alignment.centerRight,
-              child: Text("120.000"),
+              child: Text(finalprice),
+            ),
+            Align(
+              alignment: Alignment.centerRight,
+              child: Text("1389"),
             ),
           ])
         ],
