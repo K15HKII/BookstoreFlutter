@@ -51,12 +51,13 @@ class _NameChangeCardState extends State<NameChangeCard> {
               ),
               SizedBox(height: 20,),
               Container(
-                height: 48,
-                width: 155,
-                margin: const EdgeInsets.symmetric(horizontal: 90),
+
+                height: 55,
+                margin: const EdgeInsets.symmetric(horizontal: 100),
                 decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white),
                   borderRadius: BorderRadius.circular(50),
-                  color: const Color(0xff0C5776),
+                  color:  const Color(0xff0C5776),
                   boxShadow: const [
                     BoxShadow(
                       color: Colors.grey,
@@ -70,15 +71,10 @@ class _NameChangeCardState extends State<NameChangeCard> {
                       style: ButtonStyle(
                         foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
                       ),
-                      onPressed: () {
-
-                      },
-                      child: const Text(
-                        "Đăng nhập",
-                        style: TextStyle(
-                            color: Colors.white, fontSize: 16, fontFamily: "Lato"),
-                      ),
-                    )),
+                      onPressed: () { },
+                      child: const Text("Đổi tên", style: TextStyle(color: Colors.white, fontSize: 20, fontFamily: "Lato"),),
+                    )
+                ),
               ),
             ],
           ),
