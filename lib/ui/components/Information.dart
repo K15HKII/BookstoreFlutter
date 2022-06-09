@@ -1,3 +1,4 @@
+import 'package:bookstore_flutter/ui/components/namechange_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -86,10 +87,10 @@ class _InformationState extends State<Information> {
                               alignment: Alignment.centerRight,
                               child: InkWell(
                                 onTap: () {
-                                  //Navigator.push(
-                                  //context,
-                                  //MaterialPageRoute(
-                                  // builder: (context) => Information()));
+                                  Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                   builder: (context) => NameChangeCard()));
                                 },
                                 child: const Text(
                                   "Huy cute cute cute",

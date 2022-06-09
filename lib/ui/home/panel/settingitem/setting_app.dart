@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_switch/flutter_switch.dart';
-
+import 'package:bookstore_flutter/ui/components/namechange_card.dart';
 class SettingApp extends StatefulWidget {
   const SettingApp({Key? key}) : super(key: key);
 
