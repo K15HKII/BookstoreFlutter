@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-
+import 'package:bookstore_flutter/ui/components/Information.dart';
 class SettingPanel extends StatefulWidget {
   const SettingPanel({Key? key}) : super(key: key);
 
@@ -72,7 +72,7 @@ class _SettingPanelState extends State<SettingPanel> {
                   ),
                   child: Center(
                     child: Stack(
-                      children: const [
+                      children: [
                         Padding(
                             padding: const EdgeInsets.only(left: 15),
                             child: Align(
@@ -80,12 +80,22 @@ class _SettingPanelState extends State<SettingPanel> {
                                 child: Icon(Icons.person,
                                     color: Color(0xff0C5776)))),
                         Center(
-                          child: Text(
-                            "Thông tin cá nhân",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18,
-                                fontFamily: "Lato"),
+                          child: Container(
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Information()));
+                              },
+                              child: const Text(
+                                "Thông tin cá nhân",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18,
+                                    fontFamily: "Lato"),
+                              ),
+                            ),
                           ),
                         ),
                         Padding(
