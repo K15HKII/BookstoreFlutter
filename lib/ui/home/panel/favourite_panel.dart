@@ -54,10 +54,10 @@ class _FavouritePanelState extends State<FavouritePanel> {
             child: Center(
                 child: SingleChildScrollView(
           child: Wrap(children: [
-            DesignCardWithStar("Test", "assets/testbg.jpg", 10, 0.5),
-            DesignCardWithStar("Test", "assets/testbg.jpg", 10, 0.5),
-            DesignCardWithStar("Test", "assets/testbg.jpg", 10, 0.5),
-            DesignCardWithStar("Test", "assets/testbg.jpg", 10, 0.5),
+            DesignCardWithStar("Test", "assets/testbg.jpg", 15, 0.5),
+            DesignCardWithStar("Test", "assets/testbg.jpg", 12, 0.5),
+            DesignCardWithStar("Test", "assets/testbg.jpg", 12, 3.8),
+            DesignCardWithStar("Test", "assets/testbg.jpg", 10, 2.4),
             DesignCardWithStar("Test", "assets/testbg.jpg", 10, 0.5)
           ]),
         )))

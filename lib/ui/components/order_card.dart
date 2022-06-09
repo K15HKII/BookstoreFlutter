@@ -36,7 +36,7 @@ class _OrderCardState extends State<OrderCard> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
               Align(alignment: Alignment.centerLeft, child: Text("Note")),
-              Align(alignment: Alignment.centerRight, child: Text("120.000"))
+              Align(alignment: Alignment.centerRight, child: Text("tong so tien ???"))
             ]),
       )
     ]);
@@ -57,6 +57,8 @@ class OrderCardDetail extends StatelessWidget {
     final String amount = amountInt.toString();
     final finalpriceint=price*amountInt;
     final String finalprice=finalpriceint.toString();
+    int totalprice=0;
+    totalprice=totalprice+finalpriceint;
     return AspectRatio(
       aspectRatio: 327 / 100,
       child: Row(
@@ -82,10 +84,7 @@ class OrderCardDetail extends StatelessWidget {
               alignment: Alignment.centerRight,
               child: Text(finalprice),
             ),
-            Align(
-              alignment: Alignment.centerRight,
-              child: Text("1389"),
-            ),
+
           ])
         ],
       ),

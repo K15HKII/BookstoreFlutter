@@ -4,6 +4,7 @@ import 'package:bookstore_flutter/ui/home/panel/favourite_panel.dart';
 import 'package:bookstore_flutter/ui/home/panel/home_panel.dart';
 import 'package:bookstore_flutter/ui/home/panel/lend_panel.dart';
 import 'package:bookstore_flutter/ui/home/panel/order_panel.dart';
+import 'package:bookstore_flutter/ui/home/panel/setting_panel.dart';
 import 'package:flutter/material.dart';
 
 import '../authentication/login/register_page.dart';
@@ -26,10 +27,7 @@ class _MainPageState extends State<MainPage> {
     OrderPanel(),
     FavouritePanel(),
     LendPanel(),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
+    SettingPanel(),
   ];
 
   void _onItemTapped(int index) {
