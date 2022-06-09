@@ -1,5 +1,6 @@
 import 'package:bookstore_flutter/ui/components/namechange_card.dart';
 import 'package:bookstore_flutter/ui/components/password_change_card.dart';
+import 'package:bookstore_flutter/ui/components/address.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -416,11 +417,21 @@ class _InformationState extends State<Information> {
                               ),
                             )),
                         Padding(
-                            padding: const EdgeInsets.only(right: 15),
+                            padding: const EdgeInsets.only(right: 3),
                             child: Align(
-                                alignment: Alignment.centerRight,
-                                child: Icon(Icons.arrow_forward_ios_outlined,
-                                    color: Color(0xff0C5776))))
+                              alignment: Alignment.centerRight,
+                              child: IconButton(
+                                icon: Icon(Icons.arrow_forward_ios_outlined,
+                                    color: Color(0xff0C5776)),
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              Address()));
+                                },
+                              ),
+                            ))
                       ],
                     ),
                   )),
@@ -538,7 +549,6 @@ class _InformationState extends State<Information> {
                               child: IconButton(
                                 icon: Icon(Icons.arrow_forward_ios_outlined,
                                     color: Color(0xff0C5776)),
-                                tooltip: 'Increase volume by 10',
                                 onPressed: () {
                                   Navigator.push(
                                       context,
