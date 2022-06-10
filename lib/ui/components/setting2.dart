@@ -6,6 +6,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:bookstore_flutter/ui/components/permission.dart';
+import 'package:bookstore_flutter/ui/components/language.dart';
 class Setting2 extends StatefulWidget {
   const Setting2({Key? key}) : super(key: key);
 
@@ -228,6 +229,11 @@ class _Setting2State extends State<Setting2> {
                                 icon: Icon(Icons.arrow_forward_ios_outlined,
                                     color: Color(0xff0C5776)),
                                 onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              Language1()));
                                 },
                               ),
                             ))
