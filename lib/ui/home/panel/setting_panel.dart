@@ -1,6 +1,9 @@
+import 'package:bookstore_flutter/data/models/voucher/voucher.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:bookstore_flutter/ui/components/Information.dart';
+import 'package:bookstore_flutter/ui/components/voucher.dart';
+import 'package:bookstore_flutter/ui/components/setting2.dart';
 class SettingPanel extends StatefulWidget {
   const SettingPanel({Key? key}) : super(key: key);
 
@@ -127,7 +130,7 @@ class _SettingPanelState extends State<SettingPanel> {
                   ),
                   child: Center(
                     child: Stack(
-                      children: const [
+                      children: [
                         Padding(
                             padding: const EdgeInsets.only(left: 15),
                             child: Align(
@@ -144,11 +147,21 @@ class _SettingPanelState extends State<SettingPanel> {
                           ),
                         ),
                         Padding(
-                            padding: const EdgeInsets.only(right: 15),
+                            padding: const EdgeInsets.only(right: 3),
                             child: Align(
-                                alignment: Alignment.centerRight,
-                                child: Icon(Icons.arrow_forward_ios_outlined,
-                                    color: Color(0xff0C5776))))
+                              alignment: Alignment.centerRight,
+                              child: IconButton(
+                                icon: Icon(Icons.arrow_forward_ios_outlined,
+                                    color: Color(0xff0C5776)),
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              VoucherPanel()));
+                                },
+                              ),
+                            ))
                       ],
                     ),
                   )),
@@ -172,7 +185,7 @@ class _SettingPanelState extends State<SettingPanel> {
                   ),
                   child: Center(
                     child: Stack(
-                      children: const [
+                      children: [
                         Padding(
                             padding: const EdgeInsets.only(left: 15),
                             child: Align(
@@ -189,11 +202,21 @@ class _SettingPanelState extends State<SettingPanel> {
                           ),
                         ),
                         Padding(
-                            padding: const EdgeInsets.only(right: 15),
+                            padding: const EdgeInsets.only(right: 3),
                             child: Align(
-                                alignment: Alignment.centerRight,
-                                child: Icon(Icons.arrow_forward_ios_outlined,
-                                    color: Color(0xff0C5776))))
+                              alignment: Alignment.centerRight,
+                              child: IconButton(
+                                icon: Icon(Icons.arrow_forward_ios_outlined,
+                                    color: Color(0xff0C5776)),
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              Setting2()));
+                                },
+                              ),
+                            ))
                       ],
                     ),
                   )),
