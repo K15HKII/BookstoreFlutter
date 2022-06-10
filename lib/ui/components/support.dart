@@ -1,21 +1,19 @@
 import 'package:bookstore_flutter/ui/components/namechange_card.dart';
 import 'package:bookstore_flutter/ui/components/password_change_card.dart';
 import 'package:bookstore_flutter/ui/components/address.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class Setting2 extends StatefulWidget {
-  const Setting2({Key? key}) : super(key: key);
+class Support2 extends StatefulWidget {
+  const Support2({Key? key}) : super(key: key);
 
   @override
-  State<Setting2> createState() => _Setting2State();
+  State<Support2> createState() => _Support2State();
 }
 
-class _Setting2State extends State<Setting2> {
+class _Support2State extends State<Support2> {
   @override
   Widget build(BuildContext context) {
-    bool Switchbackground=false;
     return Scaffold(
         appBar: PreferredSize(
           preferredSize: const Size.fromHeight(75.0),
@@ -26,7 +24,7 @@ class _Setting2State extends State<Setting2> {
             toolbarHeight: 75.0,
             backgroundColor: Colors.white,
             title: const Text(
-              "Cài đặt",
+              "Hỗ trợ",
               style: TextStyle(
                   color: Colors.black, fontFamily: 'Lato', fontSize: 24),
               textAlign: TextAlign.center,
@@ -61,7 +59,7 @@ class _Setting2State extends State<Setting2> {
                             child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(
-                                  "Thông báo",
+                                  "Trung tâm hỗ trợ",
                                   style: TextStyle(
                                       fontSize: 16, fontFamily: "Lato"),
                                 ))),
@@ -126,7 +124,7 @@ class _Setting2State extends State<Setting2> {
                             child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(
-                                  "Riêng tư",
+                                  "Giới thiệu",
                                   style: TextStyle(
                                       fontSize: 16, fontFamily: "Lato"),
                                 ))),
@@ -186,7 +184,7 @@ class _Setting2State extends State<Setting2> {
                             child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(
-                                  "Ngôn ngữ",
+                                  "Điều khoản",
                                   style: TextStyle(
                                       fontSize: 16, fontFamily: "Lato"),
                                 ))),
@@ -245,7 +243,7 @@ class _Setting2State extends State<Setting2> {
                             child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(
-                                  "Nền tối",
+                                  "Yêu cầu xóa tài khoản",
                                   style: TextStyle(
                                       fontSize: 16, fontFamily: "Lato"),
                                 ))),
@@ -273,12 +271,8 @@ class _Setting2State extends State<Setting2> {
                             padding: const EdgeInsets.only(right: 15),
                             child: Align(
                                 alignment: Alignment.centerRight,
-                                child: CupertinoSwitch(
-                                 value: Switchbackground ,
-                                  onChanged:(bool blackscreenvalue){
-                                  //khong biet cach setstate
-                                  } ,
-                                )))
+                                child: Icon(Icons.arrow_forward_ios_outlined,
+                                    color: Color(0xff0C5776))))
                       ],
                     ),
                   )),
