@@ -4,6 +4,9 @@ import 'package:bookstore_flutter/ui/components/address.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:bookstore_flutter/ui/components/support2.dart';
+import 'package:bookstore_flutter/ui/components/introduce.dart';
+import 'package:bookstore_flutter/ui/components/tos.dart';
+import 'package:bookstore_flutter/ui/components/deleteaccount.dart';
 class Support2 extends StatefulWidget {
   const Support2({Key? key}) : super(key: key);
 
@@ -154,11 +157,21 @@ class _Support2State extends State<Support2> {
                               ),
                             )),
                         Padding(
-                            padding: const EdgeInsets.only(right: 15),
+                            padding: const EdgeInsets.only(right: 3),
                             child: Align(
-                                alignment: Alignment.centerRight,
-                                child: Icon(Icons.arrow_forward_ios_outlined,
-                                    color: Color(0xff0C5776))))
+                              alignment: Alignment.centerRight,
+                              child: IconButton(
+                                icon: Icon(Icons.arrow_forward_ios_outlined,
+                                    color: Color(0xff0C5776)),
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              Introduce2()));
+                                },
+                              ),
+                            ))
                       ],
                     ),
                   )),
@@ -216,6 +229,11 @@ class _Support2State extends State<Support2> {
                                 icon: Icon(Icons.arrow_forward_ios_outlined,
                                     color: Color(0xff0C5776)),
                                 onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              TOS()));
                                 },
                               ),
                             ))
@@ -273,11 +291,22 @@ class _Support2State extends State<Support2> {
                               ),
                             )),
                         Padding(
-                            padding: const EdgeInsets.only(right: 15),
+                            padding: const EdgeInsets.only(right: 3),
                             child: Align(
-                                alignment: Alignment.centerRight,
-                                child: Icon(Icons.arrow_forward_ios_outlined,
-                                    color: Color(0xff0C5776))))
+                              alignment: Alignment.centerRight,
+                              child: IconButton(
+                                icon: Icon(Icons.arrow_forward_ios_outlined,
+                                    color: Color(0xff0C5776)),
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              DeleteAccount()));
+                                },
+                              ),
+                            ))
+
                       ],
                     ),
                   )),

@@ -103,11 +103,21 @@ class _SettingPanelState extends State<SettingPanel> {
                           ),
                         ),
                         Padding(
-                            padding: const EdgeInsets.only(right: 15),
+                            padding: const EdgeInsets.only(right: 3),
                             child: Align(
-                                alignment: Alignment.centerRight,
-                                child: Icon(Icons.arrow_forward_ios_outlined,
-                                    color: Color(0xff0C5776))))
+                              alignment: Alignment.centerRight,
+                              child: IconButton(
+                                icon: Icon(Icons.arrow_forward_ios_outlined,
+                                    color: Color(0xff0C5776)),
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              Information()));
+                                },
+                              ),
+                            ))
                       ],
                     ),
                   )),
