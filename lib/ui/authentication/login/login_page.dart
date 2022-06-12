@@ -133,7 +133,7 @@ class _LoginState extends State<Login> {
               ),
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Greeting2()));
+                    MaterialPageRoute(builder: (context) => MainPage()));
               },
               child: const Text(
                 "Đăng nhập",
