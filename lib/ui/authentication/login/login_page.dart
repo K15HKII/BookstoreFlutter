@@ -4,7 +4,7 @@ import 'package:bookstore_flutter/ui/components/password_field.dart';
 import 'package:bookstore_flutter/ui/authentication/login/register_page.dart';
 import 'package:bookstore_flutter/ui/authentication/login/forgot_password_page.dart';
 import 'package:bookstore_flutter/ui/assets.dart' as assets;
-
+import 'package:bookstore_flutter/ui/components/greeting.dart';
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 
@@ -133,7 +133,7 @@ class _LoginState extends State<Login> {
               ),
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const MainPage()));
+                    MaterialPageRoute(builder: (context) => Greeting2()));
               },
               child: const Text(
                 "Đăng nhập",
